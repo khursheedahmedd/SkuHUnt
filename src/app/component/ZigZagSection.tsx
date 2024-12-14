@@ -1,0 +1,203 @@
+import React from "react";
+
+const ZigZagSection: React.FC = () => {
+  return (
+    <section
+      className="flex flex-col items-start rounded-[28px] p-6 md:p-10 py-16 lg:p-[7rem] mx-auto w-full"
+      style={{
+        background: "linear-gradient(to bottom, #E0E7FF, #E0E7FF)", // Indigo 300 to Indigo 200 gradient
+      }}
+    >
+      {/* Top Title */}
+      <div className="text-center mb-12">
+        <p
+          className="sm:text-4xl lg:text-6xl font-extrabold text-gray-800 text-3xl gap-6 gap-x-4"
+          style={
+            {
+              // fontFamily: "Satoshi, sans-serif",
+              // color: "#404040", // Neutral 700 color
+              // lineHeight: "100%",
+              // letterSpacing: "-2.88px",
+              // textTransform: "capitalize", // Capitalize text
+              // fontWeight: 650,
+              // textAlign: "center",
+            }
+          }
+        >
+          Sync Your TikTok Shop In Under 5-Minutes And{" "}
+          <span className="text-indigo-400 font-bold">Get Visibility.</span>
+        </p>
+      </div>
+
+      {/* Zig Zag Sections */}
+      {[
+        {
+          image: "/Featue image .png",
+          alt: "Feature Image 1",
+          title: (
+            <>
+              Accurate Profit Tracking <br />
+              <span className="text-indigo-400">Made Simple</span>
+            </>
+          ),
+          description:
+            "Quickly view your sales, sample costs, orders, refunds, ad costs, estimated payouts, and net profit—all in one glance with our intuitive tile view for effortless performance comparison.",
+          reverse: false,
+        },
+        {
+          image: "/Featue image_02.png",
+          alt: "Feature Image 2",
+          title: (
+            <>
+              Track Every <br />
+              <span className="text-indigo-400">TikTok Fee</span>
+            </>
+          ),
+          description:
+            "Stop unexpected costs from eating into your profits. Easily account for all TikTok fees, including affiliate commissions, discounts, and adjustments to see your true net profit.",
+          reverse: true,
+        },
+        {
+          image: "/Featue image_03.png",
+          alt: "Feature Image 3",
+          title: (
+            <>
+              Understand your <br />
+              <span className="text-indigo-400">sample costs</span>
+            </>
+          ),
+          description:
+            "Gain insights into sample costs and influencer ROI to fine-tune your marketing spend and maximize your returns.",
+          reverse: false,
+        },
+        {
+          image: "/Featue image_04.png",
+          alt: "Feature Image 4",
+          title: (
+            <>
+              Identify Your
+              <br />
+              Best & <br />
+              <span className="text-indigo-400">Worst Performers</span>
+            </>
+          ),
+          description:
+            "Easily find your top-selling products and pinpoint underperformers with intuitive SKU filters. Focus on what drives profits and eliminate what doesn't.",
+          reverse: true,
+        },
+        {
+          image: "/Featue image_05.png",
+          alt: "Feature Image 5",
+          title: (
+            <>
+              Spot Patterns in <br />
+              <span className="text-indigo-400">Affiliate Orders</span>
+            </>
+          ),
+          description:
+            "Quickly view your sales, sample costs, orders, refunds, ad costs, estimated payouts, and net profit—all in one glance with our intuitive tile view for effortless performance comparison.",
+          reverse: false,
+        },
+        {
+          image: "/Featue image_06.png",
+          alt: "Feature Image 4",
+          title: (
+            <>
+              Track every <br />
+              <span className="text-indigo-400">expense</span>
+            </>
+          ),
+          description:
+            "Effortlessly add and monitor all your costs to maintain a comprehensive financial overview.",
+          reverse: true,
+        },
+      ].map((section, index) => (
+        <React.Fragment key={index}>
+          <div
+            className={`flex flex-col ${
+              section.reverse ? "md:flex-row-reverse" : "md:flex-row"
+            } items-center justify-between w-full gap-8 md:gap-12 mt-2`}
+          >
+            {/* Text Section */}
+            <div className="flex-1 text-center md:text-left">
+              <p
+                className="text-3xl sm:text-3xl lg:text-4xl font-sans text-gray-800 mb-4"
+                style={
+                  {
+                    // fontFamily: "Satoshi, sans-serif",
+                    // fontSize: "50px",
+                    // color: "#404040",
+                    // lineHeight: "120%",
+                    // letterSpacing: "-2.88px",
+                    // textTransform: "capitalize",
+                    // fontWeight: 500,
+                  }
+                }
+              >
+                {section.title}
+              </p>
+              <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-6 break-words">
+                {section.description}
+              </p>
+              <a
+                href="tel:+16465665500"
+                className="bg-indigo-100 text-indigo-400 border border-indigo-600 py-2 px-4 sm:py-3 sm:px-6 rounded-full shadow-md hover:bg-indigo-50 transition duration-300 w-full md:w-auto"
+              >
+                Learn More
+              </a>
+            </div>
+            {/* Image Section */}
+            <div className="flex-1 flex justify-center items-center">
+              <img
+                src={section.image}
+                alt={section.alt}
+                className="w-full max-w-md sm:max-w-lg lg:max-w-2xl h-auto rounded-lg "
+              />
+            </div>
+          </div>
+
+          {/* Add the Card after the 4th section */}
+          {index === 3 && (
+            <div
+              className="flex flex-col items-center justify-center mt-12 bg-indigo-700 rounded-3xl shadow-lg w-full px-4 sm:px-6 md:px-8 lg:px-12 mb-[6rem]"
+              style={{
+                height: "auto",
+                padding: "40px",
+                textAlign: "center",
+              }}
+            >
+              <h2
+                className="text-4xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-4 text-center"
+                style={
+                  {
+                    // fontFamily: "Satoshi, sans-serif",
+                    // fontSize: "60px",
+                    // fontWeight: 500,
+                    // color: "#FFF",
+                    // lineHeight: "100%",
+                    // letterSpacing: "-2.88px",
+                    // textTransform: "capitalize",
+                  }
+                }
+              >
+                Experience SKUhunt Risk-Free!
+              </h2>
+              <p className="text-white text-center mb-6">
+                Explore our features with a live demo account. No sign-up, no
+                hassle - just instant access.
+              </p>
+              <a
+                href="tel:+16465665500"
+                className="bg-white text-indigo-400 border border-indigo-600 py-3 px-6 rounded-full shadow-md hover:bg-indigo-50 transition duration-300 w-full md:w-auto"
+              >
+                Explore the Demo Account
+              </a>
+            </div>
+          )}
+        </React.Fragment>
+      ))}
+    </section>
+  );
+};
+
+export default ZigZagSection;
