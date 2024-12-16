@@ -19,7 +19,7 @@ const Home: React.FC = () => {
       <Navbar />
 
       {/* Hero Section Component */}
-      <div className="p-3">
+      <div className="p-3 py-8">
         <Hero />
 
         {/* Card Component with top and bottom padding */}

@@ -3,16 +3,16 @@ import React from "react";
 const Video: React.FC = () => {
   return (
     <div
-      className="flex flex-col md:flex-row items-center p-12 lg:p-[6rem] justify-between w-full h-auto bg-gradient-to-l from-indigo-300 to-white"
+      className="flex flex-col md:flex-row items-center p-12 lg:p-[6rem] justify-between w-full h-auto bg-gradient-to-l from-indigo-300 via-white to-white"
       style={{
         // padding: "65px", // Increased padding for more space
         boxSizing: "border-box",
       }}
     >
       {/* Left Section */}
-      <div className="flex flex-col justify-center gap-6 gap-x-8 w-full md:w-1/2 text-center md:text-left">
-        <p className="text-3xl md:text-4xl lg:text-7xl text-gray-700 font-extrabold">
-          How the 7th Largest TikTok Shop Seller Built a{" "}
+      <div className="flex flex-col justify-center gap-6 gap-x-8 w-full md:w-1/2  md:text-left text-center">
+        <p className="text-2xl md:text-4xl lg:text-6xl text-gray-700 font-extrabold">
+          How the 7th Largest TikTok Shop Seller Built A{" "}
           <span className="text-indigo-400">$34M Empire</span> with SKUhunt.
         </p>
 

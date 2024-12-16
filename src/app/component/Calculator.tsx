@@ -25,11 +25,11 @@ const Calculator = () => {
           }
         }
       >
-        Download your Free Calculator
+        Download Your Free Calculator
       </p>
       <p className="text-white text-center mb-6">
         This easy-to-use calculator will help you calculate fees accurately and
-        efficiently—saving you time and effort.
+        efficiently-saving you time and effort.
       </p>
       <a className=" items-center text-center bg-white text-indigo-600 border border-indigo-600 py-3 px-6 rounded-full shadow-md hover:bg-indigo-50 w-full md:w-auto">
         Download Now

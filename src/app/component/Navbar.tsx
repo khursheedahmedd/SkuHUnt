@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white p-8 z-50 relative">
+    <nav className="bg-white p-5 lg:px-[7.25rem] z-50 relative">
       <div className="flex justify-between items-center">
         {/* Logo Section */}
         <div className="flex items-center">
@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Links Section (Desktop) */}
-        <ul className="hidden md:flex space-x-6 text-gray-800 font-normal text-sm lg:text-base">
+        <ul className="hidden md:flex space-x-10 text-gray-900 font-normal text-sm lg:text-base">
           <li>
             <span className="hover:text-indigo-600 transition duration-200 cursor-pointer">
               Home
@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
         </ul>
 
         {/* Try for Free Button */}
-        <button className="hidden md:block bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition duration-200 text-sm lg:text-base">
+        <button className="hidden md:block bg-indigo-600 text-white px-11 py-2 rounded-full hover:bg-indigo-700 transition duration-200 text-sm lg:text-base">
           Try for Free
         </button>
 
