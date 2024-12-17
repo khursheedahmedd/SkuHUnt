@@ -11,7 +11,7 @@ const ZigZagSection: React.FC = () => {
       {/* Top Title */}
       <div className="text-center mb-12">
         <p
-          className="sm:text-4xl lg:text-6xl font-extrabold text-gray-800 text-3xl gap-6 gap-x-4"
+          className="sm:text-4xl lg:text-6xl font-extrabold text-gray-700 text-3xl gap-6 gap-x-4"
           style={
             {
               // fontFamily: "Satoshi, sans-serif",
@@ -36,8 +36,9 @@ const ZigZagSection: React.FC = () => {
           alt: "Feature Image 1",
           title: (
             <>
-              Accurate Profit Tracking <br />
-              <span className="text-indigo-400">Made Simple</span>
+              <span className="text-indigo-400">Accurate Profit</span>
+              <br />
+              Tracking Made Simple
             </>
           ),
           description:
@@ -62,8 +63,8 @@ const ZigZagSection: React.FC = () => {
           alt: "Feature Image 3",
           title: (
             <>
-              Understand your <br />
-              <span className="text-indigo-400">sample costs</span>
+              Understand Your <br />
+              <span className="text-indigo-400">Sample Costs</span>
             </>
           ),
           description:
@@ -103,8 +104,8 @@ const ZigZagSection: React.FC = () => {
           alt: "Feature Image 4",
           title: (
             <>
-              Track every <br />
-              <span className="text-indigo-400">expense</span>
+              Track Every <br />
+              <span className="text-indigo-400">Expense</span>
             </>
           ),
           description:
@@ -121,7 +122,7 @@ const ZigZagSection: React.FC = () => {
             {/* Text Section */}
             <div className="flex-1 text-center md:text-left">
               <p
-                className="text-3xl sm:text-3xl lg:text-4xl font-sans text-gray-800 mb-4"
+                className="text-3xl sm:text-3xl lg:text-7xl font-satoshi font-medium text-gray-700 mb-4 mt-10 md:mt-0"
                 style={
                   {
                     // fontFamily: "Satoshi, sans-serif",
@@ -159,15 +160,15 @@ const ZigZagSection: React.FC = () => {
           {/* Add the Card after the 4th section */}
           {index === 3 && (
             <div
-              className="flex flex-col items-center justify-center mt-12 bg-indigo-700 rounded-3xl shadow-lg w-full px-4 sm:px-6 md:px-8 lg:px-12 mb-[6rem]"
+              className="flex flex-col items-center py-16 px-8 justify-center mt-12 bg-indigo-600 rounded-3xl shadow-lg w-full  sm:px-2 md:px-8 lg:px-12 mb-[6rem]"
               style={{
                 height: "auto",
-                padding: "40px",
+                // padding: "60px",
                 textAlign: "center",
               }}
             >
               <h2
-                className="text-4xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-4 text-center"
+                className="text-4xl sm:text-3xl lg:text-6xl font-extrabold text-white mb-4 text-center"
                 style={
                   {
                     // fontFamily: "Satoshi, sans-serif",
@@ -182,13 +183,13 @@ const ZigZagSection: React.FC = () => {
               >
                 Experience SKUhunt Risk-Free!
               </h2>
-              <p className="text-white text-center mb-6">
+              <p className="text-white text-center mb-6 text-sm">
                 Explore our features with a live demo account. No sign-up, no
                 hassle - just instant access.
               </p>
               <a
                 href="tel:+16465665500"
-                className="bg-white text-indigo-400 border border-indigo-600 py-3 px-6 rounded-full shadow-md hover:bg-indigo-50 transition duration-300 w-full md:w-auto"
+                className="bg-white text-indigo-600 border border-indigo-600 py-3 px-6 rounded-full shadow-md hover:bg-indigo-50 transition duration-300 w-full md:w-auto"
               >
                 Explore the Demo Account
               </a>

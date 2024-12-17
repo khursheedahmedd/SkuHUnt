@@ -44,7 +44,7 @@ const FaqComponent = () => {
     <div className="flex flex-col items-center bg-gray-50 p-6 sm:p-8 md:p-10 lg:p-16">
       {/* H2 with updated styles */}
       <h2
-        className="text-3xl text-center pt-4 py-3 md:text-4xl lg:text-5xl font-bold text-gray-700 tracking-tight"
+        className="text-6xl text-center pt-4 py-3 md:text-4xl lg:text-7xl font-bold text-gray-700 tracking-tight"
         style={{ fontFamily: "Arial, sans-serif" }}
       >
         FAQs
@@ -93,7 +93,7 @@ const FaqComponent = () => {
                 {faq.question}
               </h3>
               <span
-                className={`transform transition-transform ${
+                className={`ml-4 transform transition-transform ${
                   openFaqIndex === index ? "rotate-180" : ""
                 }`}
                 style={{ transition: "transform 0.3s ease" }}
@@ -122,7 +122,7 @@ const FaqComponent = () => {
 
       {/* Call to action section */}
       <div
-        className="flex flex-col items-center justify-center mt-12 bg-indigo-700 rounded-3xl py-12 shadow-lg w-full px-8 sm:px-6 md:px-8 lg:px-12"
+        className="flex flex-col items-center justify-center mt-12 bg-indigo-600 rounded-3xl lg:py-[6.25rem] py-12 shadow-lg w-full px-8 sm:px-6 md:px-8 lg:px-12"
         style={{
           height: "auto",
           // padding: "65px",

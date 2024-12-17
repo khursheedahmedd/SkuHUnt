@@ -2,51 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #fff9f9;
+/* Step 1: Define the custom font */
+@font-face {
+  font-family: "custom"; /* Replace with your font name */
+  src: url("/fonts/CustomFont.woff2") format("woff2"),
+    url("/fonts/CustomFont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ffffff;
-    --foreground: #ededed;
-  }
-}
-
+/* Step 2: Apply font smoothing and set the custom font */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-.card-shadow {
-  box-shadow: var(--sds-size-depth-0) var(--sds-size-depth-400)
-      var(--sds-size-depth-400) var(--sds-size-depth-negative-200)
-      var(--sds-color-black-200),
-    var(--sds-size-depth-0) var(--sds-size-depth-100) var(--sds-size-depth-100)
-      var(--sds-size-depth-negative-100) var(--sds-color-black-100);
-}
-/* global.css */
-
-/* Style for all h1 tags */
-h1 {
-  color: var(--Neutral-colors-Neutral-700, #232222);
-  font-family: Satoshi, sans-serif;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 100%; /* 64px */
-  letter-spacing: -2.56px;
-  text-transform: capitalize;
-  text-edge: cap; /* If supported by the browser */
-  leading-trim: both; /* If supported by the browser */
-}
-p {
-  color: var(--Neutral-colors-Neutral-900, #171717);
-  font-family: Satoshi, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%; /* 28px */
-  letter-spacing: 0; /* Default spacing */
-  text-transform: none; /* No transformation for p tags */
+  font-family: "custom", Arial, sans-serif; /* Fallback font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
 }

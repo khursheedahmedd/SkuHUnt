@@ -6,36 +6,12 @@ import { BsEmojiSmile } from "react-icons/bs"; // Smile Emoji icon
 const Testimonials: React.FC = () => {
   return (
     <section
-      className="relative py-24 px-8 md:px-16 lg:px-24 xl:px-32 w-full min-h-[600px] flex flex-col items-center justify-center p-6 sm:p-10 bg-gradient-to-tr from-indigo-300 via-white to-indigo-200 rounded-lg shadow-lg"
+      className="relative py-24 px-8 md:px-16 lg:px-24 xl:px-32 w-full min-h-[600px] flex flex-col items-center justify-center p-6 sm:p-10 lg:bg-lgt-image md:bg-mdt-image bg-smt-image bg-cover bg-no-repeat"
       style={{
         boxShadow:
           "0px 4px 6px -2px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.1)",
       }}
     >
-      {/* Grid Lines */}
-      <div className="absolute inset-0 pointer-events-none hidden lg:block">
-        {/* Horizontal Lines */}
-        {Array.from({ length: 10 }).map((_, index) => (
-          <div
-            key={`horizontal-${index}`}
-            className="absolute w-full h-[1px] bg-gray-400 opacity-15"
-            style={{
-              top: `${(100 / 12) * index}%`, // Position each line evenly
-            }}
-          ></div>
-        ))}
-        {/* Vertical Lines */}
-        {Array.from({ length: 10 }).map((_, index) => (
-          <div
-            key={`vertical-${index}`}
-            className="absolute h-full w-[1px] bg-gray-400 opacity-15"
-            style={{
-              left: `${(100 / 24) * index}%`, // Position each line evenly
-            }}
-          ></div>
-        ))}
-      </div>
-
       {/* Buttons */}
       <div className="absolute top-4 right-4 flex items-center justify-center w-10 h-10 bg-indigo-500 text-white rounded-full shadow-md cursor-pointer z-20">
         <AiFillStar size={20} />
@@ -47,17 +23,17 @@ const Testimonials: React.FC = () => {
         <BsEmojiSmile size={20} />
       </div>
 
-      <h2 className="text-[50px] font-bold text-neutral-700 text-center leading-[60px] tracking-[-2.88px] capitalize">
+      <h2 className="text-[65px] font-bold text-neutral-700 text-center leading-[60px] tracking-[-2.88px] capitalize py-8">
         Hear What Sellers <br />
         <span className="text-neutral-700">Have to Say</span>
       </h2>
 
-      <div className="flex flex-col items-center lg:flex-row justify-center pt-8 gap-10 w-full z-10">
+      <div className="flex flex-col flex-wrap items-center lg:flex-row justify-center pt-8 gap-10 w-full z-10">
         {/* Testimonial 1 */}
-        <div className="w-full sm:w-[350px] lg:w-[350px] h-auto p-6 flex flex-col items-center gap-4 bg-indigo-100 rounded-lg border-2 border-indigo-300 shadow-lg">
+        <div className="w-full sm:w-[350px] lg:w-[350px] h-auto p-6 flex gap-4 flex-col items-start bg-indigo-100 rounded-lg border-2 border-indigo-300 shadow-lg">
           <div className="flex items-center gap-4 mb-4">
             <div className="w-16 h-16 rounded-full bg-indigo-300 flex items-center justify-center">
-              <FiCircle className="text-white text-3xl" />
+              <FiCircle className="text-white text-2xl" />
             </div>
             <div>
               <h3 className="font-semibold text-gray-800">Shaff Qureshi</h3>
@@ -73,10 +49,10 @@ const Testimonials: React.FC = () => {
         </div>
 
         {/* Testimonial 2 */}
-        <div className="w-full sm:w-[350px] lg:w-[350px] h-auto p-6 flex flex-col items-center gap-4 bg-indigo-100 rounded-lg border-2 border-indigo-300 shadow-lg">
+        <div className="w-full sm:w-[350px] lg:w-[350px] h-auto p-6 flex flex-col items-start gap-4 bg-indigo-100 rounded-lg border-2 border-indigo-300 shadow-lg">
           <div className="flex items-center gap-4 mb-4">
             <div className="w-16 h-16 rounded-full bg-gray-300 flex items-center justify-center">
-              <FiCircle className="text-white text-3xl" />
+              <FiCircle className="text-white text-2xl" />
             </div>
             <div>
               <h3 className="font-semibold text-gray-800">Sherpa Pasang</h3>
@@ -94,10 +70,10 @@ const Testimonials: React.FC = () => {
         </div>
 
         {/* Testimonial 3 */}
-        <div className="w-full sm:w-[350px] lg:w-[350px] h-auto p-6 flex flex-col items-center gap-4 bg-indigo-100 rounded-lg border-2 border-indigo-300 shadow-lg">
+        <div className="w-full items-start sm:w-[350px] lg:w-[350px] h-auto p-6 flex flex-col gap-4 bg-indigo-100 rounded-lg border-2 border-indigo-300 shadow-lg">
           <div className="flex items-center gap-4 mb-4">
             <div className="w-16 h-16 rounded-full bg-gray-300 flex items-center justify-center">
-              <FiCircle className="text-white text-3xl" />
+              <FiCircle className="text-white text-2xl" />
             </div>
             <div>
               <h3 className="font-semibold text-gray-800">Liam Thompson</h3>

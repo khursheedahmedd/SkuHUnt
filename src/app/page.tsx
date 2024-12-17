@@ -40,7 +40,7 @@ const Home: React.FC = () => {
       <div className="py-8  lg:py-12">
         <ThreeCards />
       </div>
-      <div className="p-3">
+      <div className="">
         <Testimonials />
       </div>
       <ChooseYourPlan />

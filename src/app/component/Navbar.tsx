@@ -50,14 +50,11 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center">
-          <button
-            className="text-indigo-600"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
+          <button className="text-black" onClick={() => setMenuOpen(!menuOpen)}>
             {/* Hamburger Icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-12 w-12"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

@@ -4,12 +4,11 @@ const plans = [
   {
     name: "Starter",
     price: "$29",
-    duration: "per month",
     description:
       "Just starting your business or looking for the basics? This is the place.",
     features: [
       "1 TikTok Shop",
-      "250 Orders /per month",
+      "250 Orders / month",
       "100 Products",
       "1 User",
       "Profit & Loss Dashboard",
@@ -19,12 +18,11 @@ const plans = [
   {
     name: "Growing",
     price: "$59",
-    duration: "per month",
     description:
-      "Want to look more polished, save more time, and conquer cash flow? It's Pro time.",
+      "Want to look more polished, save more time, and conquer cash flow? It’s Pro time.",
     features: [
       "Everything in Starter Plan",
-      "3500 Orders /per month",
+      "3500 Orders / month",
       "500 Products",
       "Sample Tracking",
       "2 Users",
@@ -37,13 +35,12 @@ const plans = [
   {
     name: "Business",
     price: "$99",
-    duration: "per month",
     description:
       "For established businesses looking to scale and optimize their operations.",
     features: [
       "Everything in Growing Plan",
       "3 TikTok Shops",
-      "5000 Orders /per month",
+      "5000 Orders / month",
       "1000 Products",
       "LTV Insights",
       "4 Users",
@@ -52,13 +49,12 @@ const plans = [
   {
     name: "Enterprise",
     price: "$249",
-    duration: "per month",
     description:
       "Custom solutions and premium support for large organizations.",
     features: [
       "Everything in Business Plan",
       "Multiple TikTok Shops",
-      "15000 Orders /per month",
+      "15000 Orders / month",
       "Unlimited Products",
     ],
   },
@@ -72,9 +68,9 @@ const ChooseYourPlan = () => {
   };
 
   return (
-    <div className="bg-white py-16 px-4 sm:px-8 lg:px-16">
+    <div className="bg-gray-100 py-16 px-4 sm:px-8 lg:px-16">
       {/* Title */}
-      <h2 className="lg:text-6xl text-3xl font-bold text-center text-gray-900">
+      <h2 className="lg:text-6xl text-3xl font-bold text-center text-gray-700">
         Simple Pricing For TikTok Sellers
       </h2>
       <p className="text-center text-gray-600 mt-4">
@@ -95,8 +91,11 @@ const ChooseYourPlan = () => {
               }`}
             ></div>
           </button>
-          <span className="text-gray-700">
-            Yearly <span className="text-indigo-500 text-sm">20% off</span>
+          <span className="text-gray-500">
+            Yearly{" "}
+            <span className="text-indigo-500 py-1 bg-red-50 text-sm border border-indigo-300 px-1 rounded-full">
+              20% off
+            </span>
           </span>
         </div>
       </div>
@@ -106,44 +105,90 @@ const ChooseYourPlan = () => {
         {plans.map((plan, index) => (
           <div
             key={index}
-            className={`rounded-lg shadow-lg p-6 border transition-transform duration-300 transform ${
+            className={`rounded-lg shadow-lg p-6 border border-indigo-200 transition-transform duration-300 transform ${
               plan.isHighlighted
-                ? "bg-indigo-100 scale-105 border-indigo-500"
-                : "bg-white border-gray-200"
+                ? "bg-indigo-400 border-indigo-700 scale-105" // Apply scale only for highlighted plan
+                : "bg-white" // Remove hover effect from all cards
             }`}
           >
-            <h3 className="text-xl font-semibold text-gray-800">{plan.name}</h3>
+            <h3
+              className={`text-xl font-semibold ${
+                plan.isHighlighted ? "text-white" : "text-gray-800"
+              }`}
+            >
+              {plan.name}
+            </h3>
+
             <div className="mt-4">
-              <span className="text-5xl font-bold text-gray-900">
+              <span
+                className="font-bold"
+                style={{
+                  fontFamily: "Satoshi, sans-serif",
+                  fontSize: "50px",
+                  color: plan.isHighlighted ? "#fff" : "#404040",
+                  lineHeight: "100%",
+                  letterSpacing: "-2.88px",
+                  textTransform: "capitalize",
+                  fontWeight: 500,
+                }}
+              >
                 {plan.price}
               </span>
-              <span className="text-lg text-gray-500">
-                {" "}
-                /{isMonthly ? "month" : "year"}
+              <span
+                className={`text-lg ${
+                  plan.isHighlighted ? "text-white" : "text-gray-500"
+                }`}
+              >
+                {" / "}
+                {isMonthly ? "Per Month" : "Per Year"}
               </span>
             </div>
-            <p className="text-gray-600 mt-4">{plan.description}</p>
-            <button className="w-full py-3 mt-6 text-white bg-indigo-500 rounded-full hover:bg-indigo-600 transition">
+            <p
+              className={`mt-4 ${
+                plan.isHighlighted ? "text-white" : "text-gray-700"
+              }`}
+              style={{
+                maxWidth: "300px",
+                lineHeight: "1.6",
+                fontSize: "1rem",
+                whiteSpace: "normal",
+              }}
+            >
+              {plan.description}
+            </p>
+            <button
+              className={`w-full py-3 mt-6 rounded-lg transition ${
+                plan.isHighlighted
+                  ? "bg-white text-indigo-500 border-indigo-200 border hover:bg-indigo-50"
+                  : "bg-indigo-400 text-white hover:bg-indigo-500"
+              }`}
+            >
               Get Started
             </button>
-            <ul className="mt-6 space-y-4">
+
+            {/* Dashed Line After Button */}
+            <div
+              className={`mt-6 border-t-2 border-dashed ${
+                plan.isHighlighted ? "border-white" : "border-gray-300"
+              }`}
+            ></div>
+
+            {/* Features */}
+            <ul className="space-y-3 mt-4">
               {plan.features.map((feature, idx) => (
-                <li key={idx} className="flex items-center text-gray-700">
-                  <svg
-                    className="w-5 h-5 text-green-500 mr-2"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+                <li key={idx} className="flex items-center">
+                  <span
+                    className={`w-6 h-6 bg-white text-green-500 flex items-center justify-center rounded-full border border-gray-200 mr-3`}
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                  {feature}
+                    ✓
+                  </span>
+                  <p
+                    className={`${
+                      plan.isHighlighted ? "text-white" : "text-gray-700"
+                    }`}
+                  >
+                    {feature}
+                  </p>
                 </li>
               ))}
             </ul>
@@ -152,10 +197,13 @@ const ChooseYourPlan = () => {
       </div>
 
       {/* Free Trial Button */}
-      <div className="flex justify-center mt-12">
-        <button className="py-3 px-8 text-lg font-semibold text-white bg-indigo-500 rounded-full hover:bg-indigo-600 transition">
+      <div className="flex justify-center py-6 mt-8">
+        <a
+          href="#"
+          className="w-auto py-3 px-6 rounded-full shadow-md font-medium text-lg bg-indigo-600 text-white border-indigo-600 hover:bg-indigo-700 text-center"
+        >
           Start Your Free Trial
-        </button>
+        </a>
       </div>
     </div>
   );

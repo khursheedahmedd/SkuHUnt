@@ -16,9 +16,12 @@ export default {
         satoshi: ['Satoshi', 'sans-serif'],
       },
       backgroundImage: {
-        'mobile-gradient': 'linear-gradient(to bottom left, #c3dafe, #ffffff, #c3dafe)',
+        'mobile-gradient': 'url(/sm-bg.png)',
         'tablet-image': "url('/md-bg.png')",
         'desktop-image': "url('/lg-bg.png')",
+        'lgt-image': "url('/lg-t-bg.png')",
+        'mdt-image': "url('/mdt-bg.png')",
+        'smt-image': "url('/smt-bg.png')",
       },
 
     },
