@@ -73,7 +73,7 @@ const FaqComponent = () => {
             className="mb-4 p-4 border rounded-lg shadow-md transition-all"
             style={{
               borderColor: openFaqIndex === index ? "#4F46E5" : "#667eea",
-              backgroundColor: openFaqIndex === index ? "#f7fafc" : "white",
+              backgroundColor: openFaqIndex === index ? "#EEF0FFFF" : "white",
             }}
           >
             <div
@@ -98,7 +98,7 @@ const FaqComponent = () => {
                 }`}
                 style={{ transition: "transform 0.3s ease" }}
               >
-                &#9650; {/* This is the arrow for toggling */}
+                &#x25BC; {/* This is the arrow for toggling */}
               </span>
             </div>
             {openFaqIndex === index && (

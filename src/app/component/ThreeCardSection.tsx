@@ -51,7 +51,7 @@ const ThreeCardSection: React.FC = () => {
 
       {/* Start Signing Now Button */}
       <div className="flex justify-center py-4 mt-6">
-        <button className="bg-indigo-600 text-white py-2 px-6 rounded-full shadow-md hover:bg-indigo-500 transition w-full sm:w-auto">
+        <button className="bg-indigo-600 text-white py-3 px-7 rounded-full shadow-md hover:bg-indigo-500 transition w-full sm:w-auto">
           Start Syncing Now
         </button>
       </div>

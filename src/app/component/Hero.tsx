@@ -15,14 +15,14 @@ const Hero: React.FC = () => {
               Profit Analytics
             </span>
           </p>
-          <div className="text-sm text-[#404040] space-y-6">
+          <div className="text-sm text-[#404040] space-y-5">
             <div className="flex items-start space-x-4 text-left rounded-xl">
               <img
                 src="/secure-con.jpg"
                 alt="Shield Icon"
                 className="w-6 h-6 mt-1" /* Adjust width and height as needed */
               />
-              <p className="font-satoshi text-md leading-7">
+              <p className="font-satoshi text-lg leading-7">
                 We Never Sell Your Data. 100% Secure.
               </p>
             </div>
@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
                 alt="Clock Icon"
                 className="w-6 h-6 mt-1"
               />
-              <p className="font-satoshi text-sm leading-7">
+              <p className="font-satoshi text-lg leading-7">
                 Connect Your TikTok Shop in Just 5 Minutes
               </p>
             </div>
@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
                 alt="Check Icon"
                 className="w-6 h-6 mt-1"
               />
-              <p className="font-satoshi text-sm leading-7">
+              <p className="font-satoshi text-lg leading-7">
                 Over 99% accuracy in calculating TikTok Shop Fees & Profits
               </p>
             </div>
@@ -52,9 +52,9 @@ const Hero: React.FC = () => {
             <button className="bg-indigo-600 text-white py-3 px-6 rounded-full shadow-md hover:bg-indigo-500 transition duration-300 w-full sm:w-3/4 md:w-auto">
               Start Your Free Trial
             </button>
-            <a className=" text-indigo-600 border border-indigo-600 py-3 px-6 rounded-full shadow-md hover:bg-indigo-100 transition duration-300 w-full sm:w-3/4 md:w-auto text-center">
+            <button className=" text-indigo-600 border md:mt-8 border-indigo-600 py-3 px-6 rounded-full shadow-md hover:bg-indigo-100 transition duration-300 w-full sm:w-3/4 md:w-auto text-center">
               Call us at: 646-566-5500
-            </a>
+            </button>
           </div>
         </div>
 

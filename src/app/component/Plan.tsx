@@ -68,7 +68,7 @@ const ChooseYourPlan = () => {
   };
 
   return (
-    <div className="bg-gray-100 py-16 px-4 sm:px-8 lg:px-16">
+    <div className="bg-gray-100 py-16 md:flex md:flex-col justify-center items-center px-4 sm:px-8 lg:px-16">
       {/* Title */}
       <h2 className="lg:text-6xl text-3xl font-bold text-center text-gray-700">
         Simple Pricing For TikTok Sellers
@@ -100,15 +100,14 @@ const ChooseYourPlan = () => {
         </div>
       </div>
 
-      {/* Pricing Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:gap-8 gap-6 items-center mt-10">
         {plans.map((plan, index) => (
           <div
             key={index}
-            className={`rounded-lg shadow-lg p-6 border border-indigo-200 transition-transform duration-300 transform ${
+            className={`rounded-lg shadow-lg p-6 md:max-w-[22rem] border border-indigo-200 transition-transform duration-300 transform ${
               plan.isHighlighted
-                ? "bg-indigo-400 border-indigo-700 scale-105" // Apply scale only for highlighted plan
-                : "bg-white" // Remove hover effect from all cards
+                ? "bg-indigo-400 border-indigo-700 scale-105"
+                : "bg-white"
             }`}
           >
             <h3
@@ -148,7 +147,7 @@ const ChooseYourPlan = () => {
                 plan.isHighlighted ? "text-white" : "text-gray-700"
               }`}
               style={{
-                maxWidth: "300px",
+                maxWidth: "220px",
                 lineHeight: "1.6",
                 fontSize: "1rem",
                 whiteSpace: "normal",
