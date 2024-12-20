@@ -19,25 +19,25 @@ const Home: React.FC = () => {
       <Navbar />
 
       {/* Hero Section Component */}
-      <div className="p-3 md:p-8 py-8">
+      <div className=" md:p-8 py-8">
         <Hero />
 
         {/* Card Component with top and bottom padding */}
-        <div className="pt-8 pb-6 sm:pt-8 sm:pb-8 py-6">
+        <div className="mt-5 md:px-0 px-3 py-2">
           <Card />
         </div>
       </div>
 
       {/* Video Component */}
       <Video />
-      <div className="pt-[5rem] pb-[7rem] p-4 lg:p-9">
+      <div className="md:pt-[3rem] pt-0 md:pb-[7rem] pb-[2rem] p-4 lg:p-9">
         <Cal />
       </div>
       <div className="p-2 lg:p-9">
         <ZigZag />
       </div>
 
-      <div className="py-8  lg:py-12">
+      <div className="md:py-8 py-0 lg:py-12">
         <ThreeCards />
       </div>
       <div className="">

@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Links Section (Desktop) */}
-        <ul className="hidden md:flex space-x-10 text-gray-900 font-normal text-sm lg:text-base">
+        <ul className="hidden md:flex space-x-10 text-gray-950 font-normal text-sm lg:text-base">
           <li>
             <span className="hover:text-indigo-600 transition duration-200 cursor-pointer">
               Home

@@ -6,14 +6,14 @@ import { BsEmojiSmile } from "react-icons/bs"; // Smile Emoji icon
 const Testimonials: React.FC = () => {
   return (
     <section
-      className="relative py-24 px-8 md:px-16 lg:px-24 xl:px-32 w-full min-h-[600px] flex flex-col items-center justify-center p-6 sm:p-10 lg:bg-lgt-image md:bg-mdt-image bg-smt-image bg-cover bg-no-repeat"
+      className=" py-24 lg:py-[5rem]  px-8 md:px-16 lg:px-24 xl:px-32 w-full min-h-[600px] flex flex-col items-center justify-center p-6 sm:p-10 lg:bg-lgt-image md:bg-mdt-image bg-smt-image bg-cover bg-no-repeat "
       style={{
         boxShadow:
           "0px 4px 6px -2px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.1)",
       }}
     >
       {/* Buttons */}
-      <div className="absolute top-4 right-4 flex items-center justify-center w-10 h-10 bg-indigo-500 text-white rounded-full shadow-md cursor-pointer z-20">
+      {/* <div className="absolute top-4 right-4 flex items-center justify-center w-10 h-10 bg-indigo-500 text-white rounded-full shadow-md cursor-pointer z-20">
         <AiFillStar size={20} />
       </div>
       <div className="absolute bottom-4 right-4 flex items-center justify-center w-10 h-10 bg-indigo-500 text-white rounded-full shadow-md cursor-pointer z-20">
@@ -21,9 +21,9 @@ const Testimonials: React.FC = () => {
       </div>
       <div className="absolute top-1/2 left-4 transform -translate-y-1/2 flex items-center justify-center w-10 h-10 bg-indigo-500 text-white rounded-full shadow-md cursor-pointer z-20">
         <BsEmojiSmile size={20} />
-      </div>
+      </div> */}
 
-      <h2 className="text-[65px] font-bold text-neutral-700 text-center leading-[60px] tracking-[-2.88px] capitalize py-8">
+      <h2 className="md:text-[65px] text-[56px] font-bold text-neutral-700 text-center leading-[60px] tracking-[-2.88px] capitalize py-8">
         Hear What Sellers <br />
         <span className="text-neutral-700">Have to Say</span>
       </h2>
@@ -89,8 +89,8 @@ const Testimonials: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="mt-10">
-        <a className="bg-indigo-600 text-white border border-indigo-600 py-3 px-6 rounded-full shadow-md hover:bg-indigo-50 transition duration-300 w-full md:w-auto">
+      <div className="mt-16">
+        <a className="bg-indigo-600 text-white border hover:bg-indigo-400 cursor-pointer  border-indigo-600 py-4 px-8 rounded-full shadow-md  transition duration-300 w-full md:w-auto">
           Start Your Free Trial
         </a>
       </div>

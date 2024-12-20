@@ -47,8 +47,8 @@ const CardComponent: React.FC = () => {
   return (
     <div className="flex flex-col items-center p-6 rounded-[30px] bg-gray-100 shadow-lg mx-auto w-full max-w-screen-2xl sm:w-[95%]">
       {/* Logos Section */}
-      <div className="text-center pb-6 text-gray-700 font-medium">
-        <p className="text-xl sm:text-2xl">
+      <div className="text-center pb-6 text-gray-500 md:text-gray-700 font-medium">
+        <p className="text-xl md:text-2xl">
           Driving Business Decisions for Top TikTok Brands
         </p>
       </div>

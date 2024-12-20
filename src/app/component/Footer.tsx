@@ -3,7 +3,7 @@ import React from "react";
 const Footer: React.FC = () => {
   return (
     <footer
-      className="flex flex-col items-start gap-14 py-8 md:py-12 px-6 sm:px-12 lg:px-16 xl:px-24"
+      className="flex flex-col items-start md:gap-24 gap-20 py-8 md:py-12 px-6 sm:px-12 lg:px-16 xl:px-24"
       style={{
         borderRadius: "40px 40px 0px 0px",
         background: "linear-gradient(180deg, #6C9CFF 0%, #FCFCFC 100%)",
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
           Let’s Sit & Talk
         </h2>
 
-        <div className="flex flex-col  pb-8 gap-4 items-center sm:items-end sm:w-1/3 mt-8 sm:mt-0 ">
+        <div className="flex flex-col  md:pb-8 md:gap-4 items-center sm:items-end sm:w-1/3 md:mt-8  ">
           <form className="flex flex-col w-full sm:w-auto justify-end">
             <div className="relative w-full">
               <input
@@ -74,23 +74,22 @@ const Footer: React.FC = () => {
       <div className="flex flex-col sm:flex-row justify-between w-full gap-10 sm:gap-16">
         {/* Address Section */}
         <div className="flex-1 sm:w-1/3">
-          <h3 className="text-xl sm:text-2xl font-semibold text-gray-700 mb-4">
-            Our Address
+          <h3 className="text-xl sm:text-xl font-semibold text-gray-600 mb-4">
+            Address
           </h3>
           <p className="text-gray-600">
             SKUhunt LLC
             <br />
-            51-02 21st Fl 4, Suite 105
-            <br />
-            Long Island City, NY 11109
+            51-02 21st Fl 4, Suite 105 Long Island <br />
+            City, NY 11109
           </p>
         </div>
 
         {/* Company & Policies Section */}
-        <div className="flex-1 sm:w-2/3 flex flex-col sm:flex-row justify-end gap-16">
+        <div className="flex-1 sm:w-2/3 flex md:flex-row flex-row justify-end gap-16">
           {/* Company Section */}
           <div>
-            <h3 className="text-xl sm:text-2xl font-semibold text-gray-700 mb-4">
+            <h3 className="text-xl sm:text-xl font-semibold text-gray-600 mb-4">
               Company
             </h3>
             <ul className="space-y-4 text-gray-600">
@@ -119,7 +118,7 @@ const Footer: React.FC = () => {
 
           {/* Policies Section */}
           <div>
-            <h3 className="text-xl sm:text-2xl font-semibold text-gray-700 mb-4">
+            <h3 className="text-xl sm:text-xl font-semibold font-satoshi text-gray-600 mb-4">
               Policies
             </h3>
             <ul className="space-y-4 text-gray-600">
@@ -154,7 +153,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="flex md:flex-row flex-col text-center mt-16 text-gray-600 gap-6 items-start">
+      <div className="flex md:flex-row flex-col text-center md:mt-16 mt-2 text-gray-600 gap-6 items-start">
         <p>&copy; 2024 Copysright By SKUhunt </p>
         <p>Terms</p>
         <p>Privacy</p>

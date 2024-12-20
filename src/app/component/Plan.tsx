@@ -68,9 +68,9 @@ const ChooseYourPlan = () => {
   };
 
   return (
-    <div className="bg-gray-100 py-16 md:flex md:flex-col justify-center items-center px-4 sm:px-8 lg:px-16">
+    <div className="bg-gray-100 py-20 md:flex md:flex-col justify-center items-center px-4 sm:px-8 lg:px-16">
       {/* Title */}
-      <h2 className="lg:text-6xl text-3xl font-bold text-center text-gray-700">
+      <h2 className="lg:text-7xl text-3xl font-bold text-center text-gray-700 px-6">
         Simple Pricing For TikTok Sellers
       </h2>
       <p className="text-center text-gray-600 mt-4">
@@ -83,7 +83,7 @@ const ChooseYourPlan = () => {
           <span className="text-gray-700">Monthly</span>
           <button
             onClick={toggleDuration}
-            className="relative flex items-center w-16 h-8 bg-gray-200 rounded-full cursor-pointer"
+            className="relative flex items-center w-16 h-8 bg-white border border-indigo-200 rounded-full cursor-pointer"
           >
             <div
               className={`absolute w-6 h-6 bg-indigo-500 rounded-full shadow-md transform transition-transform duration-300 ${
@@ -100,11 +100,11 @@ const ChooseYourPlan = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:gap-8 gap-6 items-center mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:gap-6 gap-6 items-center mt-10 w-full px-2 md:px-6 lg:px-8">
         {plans.map((plan, index) => (
           <div
             key={index}
-            className={`rounded-lg shadow-lg p-6 md:max-w-[22rem] border border-indigo-200 transition-transform duration-300 transform ${
+            className={`rounded-xl p-6 md:max-w-[22rem] border border-indigo-200 transition-transform duration-300 transform ${
               plan.isHighlighted
                 ? "bg-indigo-400 border-indigo-700 scale-105"
                 : "bg-white"
@@ -120,10 +120,10 @@ const ChooseYourPlan = () => {
 
             <div className="mt-4">
               <span
-                className="font-bold"
+                className="font-bold text-6xl md:text-7xl lg:text-7xl"
                 style={{
                   fontFamily: "Satoshi, sans-serif",
-                  fontSize: "50px",
+                  // fontSize: "65px",
                   color: plan.isHighlighted ? "#fff" : "#404040",
                   lineHeight: "100%",
                   letterSpacing: "-2.88px",
@@ -156,7 +156,7 @@ const ChooseYourPlan = () => {
               {plan.description}
             </p>
             <button
-              className={`w-full py-3 mt-6 rounded-lg transition ${
+              className={`w-full py-2 px-12 mt-6 rounded-lg transition ${
                 plan.isHighlighted
                   ? "bg-white text-indigo-500 border-indigo-200 border hover:bg-indigo-50"
                   : "bg-indigo-400 text-white hover:bg-indigo-500"
@@ -199,7 +199,7 @@ const ChooseYourPlan = () => {
       <div className="flex justify-center py-6 mt-8">
         <a
           href="#"
-          className="w-auto py-3 px-6 rounded-full shadow-md font-medium text-lg bg-indigo-600 text-white border-indigo-600 hover:bg-indigo-700 text-center"
+          className="w-auto py-3 px-8 rounded-full shadow-md font-medium text-lg bg-indigo-600 text-white border-indigo-600 hover:bg-indigo-700 text-center"
         >
           Start Your Free Trial
         </a>

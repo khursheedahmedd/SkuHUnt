@@ -3,7 +3,7 @@ import React from "react";
 const Calculator = () => {
   return (
     <div
-      className="flex flex-col items-center text-center justify-center mt-12 bg-indigo-600 py-[6rem] px-[3.25rem] lg:py-[8rem] rounded-3xl shadow-lg w-full space-y-10 sm:px-12"
+      className="flex flex-col items-center text-center justify-center md:mt-12 mt-0 bg-indigo-600 py-[4rem] sm:py-[6rem] px-[3.25rem] lg:py-[8rem] rounded-3xl shadow-lg w-full space-y-5 sm:px-12"
       style={{
         height: "auto",
         // padding: "40px",
@@ -11,7 +11,7 @@ const Calculator = () => {
       }}
     >
       <p
-        className="font-extrabold text-white mb-2 gap-6 gap-x-4 text-center lg:text-7xl text-4xl "
+        className="font-extrabold text-white mb-2 gap-6 gap-x-4 text-center lg:text-7xl md:text-4xl text-3xl"
         style={
           {
             // fontFamily: "Satoshi, Arial",
@@ -29,9 +29,9 @@ const Calculator = () => {
       </p>
       <p className="text-white text-center mb-6">
         This easy-to-use calculator will help you calculate fees accurately and
-        efficiently—saving you time and effort.
+        efficiently saving you time and effort.
       </p>
-      <a className=" items-center text-center bg-white text-indigo-600 border border-indigo-600 py-3 px-6 rounded-full shadow-md hover:bg-indigo-50 w-full md:w-auto">
+      <a className="mt-4 items-center text-center bg-white text-indigo-800 border border-indigo-600 py-3 px-14 rounded-full shadow-md hover:bg-indigo-50 w-full md:w-auto">
         Download Now
       </a>
     </div>
