@@ -4,16 +4,16 @@ const ThreeCardSection: React.FC = () => {
   return (
     <section className="w-full px-4 md:py-8 py-4 flex flex-col items-center gap-8">
       {/* Top Heading */}
-      <p className="text-center text-3xl sm:text-3xl md:text-4xl lg:text-6xl space-x-1 font-extrabold leading-snug text-gray-800 md:py-8 py-4">
+      <p className="text-center text-3xl sm:text-3xl md:text-4xl lg:text-6xl space-x-1 font-bold leading-snug text-gray-800 md:py-8 py-4">
         Accurate Numbers, Bigger Profits
         <br className="hidden sm:block" />
         <span className="text-indigo-400">Just 3-Steps Away</span>
       </p>
 
       {/* Card Container */}
-      <div className="w-full flex flex-wrap justify-center gap-6">
+      <div className="w-full flex flex-wrap  justify-center gap-6">
         {/* Card 1 */}
-        <div className="flex flex-col md:space-y-8 space-y-6 w-full sm:w-[300px] h-[24rem] p-6  bg-neutral-100 rounded-2xl border border-indigo-600 shadow-md hover:shadow-lg transition-shadow">
+        <div className="flex flex-col md:space-y-8 space-y-6 w-full sm:w-[300px] sm:h-[24rem] h-[23rem] p-6  bg-neutral-100 rounded-2xl border border-indigo-600 shadow-md hover:shadow-lg transition-shadow">
           <h2 className="text-indigo-400 text-6xl ">Step 01</h2>
           <h3 className="text-neutral-700 text-[24px] font-medium leading-[33.6px]">
             Sign Up & Connect Your TikTok Shop
@@ -25,7 +25,7 @@ const ThreeCardSection: React.FC = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="flex flex-col md:space-y-8 space-y-6 w-full sm:w-[300px] h-[20rem] md:h-[24rem] p-6 bg-neutral-100 rounded-2xl border border-indigo-600 shadow-md hover:shadow-lg transition-shadow">
+        <div className="flex flex-col md:space-y-8 space-y-6 w-full sm:w-[300px] h-[19.25rem] md:h-[24rem] p-6 bg-neutral-100 rounded-2xl border border-indigo-600 shadow-md hover:shadow-lg transition-shadow">
           <h2 className="text-indigo-400 text-6xl ">Step 02</h2>
           <h3 className="text-neutral-700 text-[24px] font-medium leading-[33.6px]">
             Enter Your Product Costs

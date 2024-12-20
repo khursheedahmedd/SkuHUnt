@@ -19,15 +19,14 @@ const Home: React.FC = () => {
       <Navbar />
 
       {/* Hero Section Component */}
-      <div className=" md:p-8 py-8">
+      <div className=" md:p-8  py-8">
         <Hero />
-
-        {/* Card Component with top and bottom padding */}
-        <div className="mt-5 md:px-0 px-3 py-2">
-          <Card />
-        </div>
       </div>
 
+      {/* Card Component with top and bottom padding */}
+      <div className="mb-4 md:px-0 px-3 py-2">
+        <Card />
+      </div>
       {/* Video Component */}
       <Video />
       <div className="md:pt-[3rem] pt-0 md:pb-[7rem] pb-[2rem] p-4 lg:p-9">

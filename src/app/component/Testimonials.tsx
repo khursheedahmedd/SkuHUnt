@@ -6,7 +6,7 @@ import { BsEmojiSmile } from "react-icons/bs"; // Smile Emoji icon
 const Testimonials: React.FC = () => {
   return (
     <section
-      className=" py-24 lg:py-[5rem]  px-8 md:px-16 lg:px-24 xl:px-32 w-full min-h-[600px] flex flex-col items-center justify-center p-6 sm:p-10 lg:bg-lgt-image md:bg-mdt-image bg-smt-image bg-cover bg-no-repeat "
+      className=" py-12 lg:py-[5rem]  px-8 md:px-16 lg:px-24 xl:px-32 w-full min-h-[600px] flex flex-col items-center justify-center p-6 sm:p-10 lg:bg-lgt-image md:bg-mdt-image bg-smt-image bg-cover bg-no-repeat "
       style={{
         boxShadow:
           "0px 4px 6px -2px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.1)",
@@ -23,7 +23,7 @@ const Testimonials: React.FC = () => {
         <BsEmojiSmile size={20} />
       </div> */}
 
-      <h2 className="md:text-[65px] text-[56px] font-bold text-neutral-700 text-center leading-[60px] tracking-[-2.88px] capitalize py-8">
+      <h2 className="md:text-[65px] text-[52px] font-bold text-neutral-700 text-center leading-[60px] tracking-[-2.88px] capitalize py-8">
         Hear What Sellers <br />
         <span className="text-neutral-700">Have to Say</span>
       </h2>

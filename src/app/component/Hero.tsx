@@ -3,7 +3,7 @@ import React from "react";
 const Hero: React.FC = () => {
   return (
     <div className="">
-      <section className="flex flex-col items-start bg-mobile-gradient md:bg-tablet-image p-6  bg-cover bg-no-repeat lg:bg-desktop-image rounded-[28px] shadow-lg  md:p-10 lg:py-8 lg:px-16 mx-auto lg:max-w-[99rem] xl:max-w-[200rem]">
+      <section className="flex flex-col items-start bg-mobile-gradient md:bg-tablet-image p-6 bg-cover bg-no-repeat lg:bg-desktop-image rounded-[28px] shadow-lg  md:p-10 lg:py-8 lg:px-16 mx-auto lg:max-w-[100rem] xl:max-w-[200rem]">
         {/* Text Section */}
         <div className="flex flex-col md:flex-row items-center text-center md:text-left w-full md:gap-8">
           <div className="flex flex-col  md:items-start w-full md:w-1/2 space-y-6">
@@ -79,6 +79,26 @@ const Hero: React.FC = () => {
                   Distributed
                 </div>
                 <div className="text-5xl font-satoshi"> 68</div>
+              </div>
+              <div className="absolute top-[10rem] right-[-16px] sm:right-0 object-cover rounded-lg  w-[7rem] sm:hidden block ">
+                <div className="absolute right-2  w-full mt-10 sm:w-auto flex justify-center border border-indigo-400 sm:justify-end bg-white rounded-lg shadow-lg  items-center  space-x-2 py-3 px-2">
+                  {/* Footer Images (Cards) */}
+                  <img
+                    src="/GDPR FRAME.png"
+                    alt="Footer Image 1"
+                    className="h-5 w-5 object-cover rounded-full shadow-small"
+                  />
+                  <img
+                    src="/SSL frame.png"
+                    alt="Footer Image 2"
+                    className="h-5 w-5 object-cover rounded-full shadow-small "
+                  />
+                  <img
+                    src="/Tiktok frame.png"
+                    alt="Footer Image 3"
+                    className="h-5 w-9 object-cover rounded-full shadow-small "
+                  />
+                </div>
               </div>
             </div>
             <img

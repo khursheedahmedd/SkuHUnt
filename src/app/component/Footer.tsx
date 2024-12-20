@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
           Let’s Sit & Talk
         </h2>
 
-        <div className="flex flex-col  md:pb-8 md:gap-4 items-center sm:items-end sm:w-1/3 md:mt-8  ">
+        <div className="flex flex-col  md:pb-8 md:gap-4 items-start sm:items-end sm:w-1/3 md:mt-8  ">
           <form className="flex flex-col w-full sm:w-auto justify-end">
             <div className="relative w-full">
               <input

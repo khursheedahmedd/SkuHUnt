@@ -11,7 +11,7 @@ const Calculator = () => {
       }}
     >
       <p
-        className="font-extrabold text-white mb-2 gap-6 gap-x-4 text-center lg:text-7xl md:text-4xl text-3xl"
+        className="font-bold text-white mb-2 gap-6 gap-x-4 text-center lg:text-7xl md:text-4xl text-3xl"
         style={
           {
             // fontFamily: "Satoshi, Arial",
