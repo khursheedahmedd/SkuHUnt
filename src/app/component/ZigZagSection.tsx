@@ -168,7 +168,7 @@ const ZigZagSection: React.FC = () => {
               }}
             >
               <h2
-                className="text-4xl sm:text-3xl lg:text-6xl font-extrabold text-white mb-4 text-center"
+                className="text-4xl sm:text-3xl lg:text-6xl font-bold text-white mb-4 text-center"
                 style={
                   {
                     // fontFamily: "Satoshi, sans-serif",

@@ -121,7 +121,7 @@ const FaqComponent = () => {
 
       <div className="flex flex-col items-center justify-center mt-12 bg-indigo-600 rounded-3xl lg:py-[6.25rem] py-12 shadow-lg w-full px-8 sm:px-6 md:px-8 lg:px-12">
         <p
-          className="gap-2 text-white mb-4 text-center text-2xl lg:text-6xl font-extrabold"
+          className="gap-2 text-white mb-4 text-center text-2xl lg:text-6xl font-bold"
           style={{ textTransform: "capitalize" }}
         >
           Do what you love, Sell More.

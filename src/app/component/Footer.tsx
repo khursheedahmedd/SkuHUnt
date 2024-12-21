@@ -3,7 +3,7 @@ import React from "react";
 const Footer: React.FC = () => {
   return (
     <footer
-      className="flex flex-col items-start md:gap-24 gap-20 py-8 md:py-12 px-6 sm:px-12 lg:px-16 xl:px-24"
+      className="flex flex-col items-start  md:gap-24 gap-20 py-8 md:py-12 px-6 sm:px-12 lg:px-16 xl:px-24"
       style={{
         borderRadius: "40px 40px 0px 0px",
         background: "linear-gradient(180deg, #6C9CFF 0%, #FCFCFC 100%)",
@@ -28,13 +28,13 @@ const Footer: React.FC = () => {
           Let’s Sit & Talk
         </h2>
 
-        <div className="flex flex-col  md:pb-8 md:gap-4 items-start sm:items-end sm:w-1/3 md:mt-8  ">
-          <form className="flex flex-col w-full sm:w-auto justify-end">
+        <div className="flex flex-col sm:flex-row mb-8 items-start sm:items-center gap-4 w-full sm:w-auto sm:justify-between">
+          <form className="flex flex-col w-full sm:w-auto justify-start sm:justify-center items-start sm:items-center">
             <div className="relative w-full">
               <input
                 type="email"
                 placeholder="Enter Your Email"
-                className="border-b-2 md:ml-3 border-white flex flex-grow text-white bg-transparent focus:ring-0 focus:outline-none opacity-80 text-lg placeholder-white w-full sm:w-[400px] md:w-[500px] lg:w-[400px] xl:w-[450px] pb-2 md:pb-6 pr-16  text-left lg:placeholder:text-4xl placeholder:text-xl"
+                className="border-b-2 border-white text-white bg-transparent focus:ring-0 focus:outline-none text-lg placeholder-white w-full sm:w-[400px] md:w-[500px] lg:w-[400px] xl:w-[450px] pb-2 md:pb-6 pr-16"
                 required
                 style={{
                   fontFamily: "Satoshi, sans-serif",
@@ -42,12 +42,10 @@ const Footer: React.FC = () => {
                   fontWeight: 400,
                   lineHeight: "24px",
                   letterSpacing: "-0.5px",
-                  color: "var(--Neutral-colors-White-text, #FFF)",
+                  color: "#FFF",
                   paddingTop: "20px",
-                  // paddingBottom: "20px",
                 }}
               />
-
               <div className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-2xl sm:text-3xl md:text-4xl">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +84,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Company & Policies Section */}
-        <div className="flex-1 sm:w-2/3 flex md:flex-row flex-row justify-end gap-16">
+        <div className="flex-1 sm:w-2/3 flex md:flex-row flex-row lg:justify-end md:justify-between justify-start gap-16 ">
           {/* Company Section */}
           <div>
             <h3 className="text-xl sm:text-xl font-semibold text-gray-600 mb-4">

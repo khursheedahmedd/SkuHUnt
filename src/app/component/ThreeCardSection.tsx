@@ -25,7 +25,7 @@ const ThreeCardSection: React.FC = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="flex flex-col md:space-y-8 space-y-6 w-full sm:w-[300px] h-[19.25rem] md:h-[24rem] p-6 bg-neutral-100 rounded-2xl border border-indigo-600 shadow-md hover:shadow-lg transition-shadow">
+        <div className="flex flex-col md:space-y-8 space-y-6 w-full sm:w-[300px] h-[21rem] sm:h-[24rem] p-6 bg-neutral-100 rounded-2xl border border-indigo-600 shadow-md hover:shadow-lg transition-shadow">
           <h2 className="text-indigo-400 text-6xl ">Step 02</h2>
           <h3 className="text-neutral-700 text-[24px] font-medium leading-[33.6px]">
             Enter Your Product Costs
@@ -37,7 +37,7 @@ const ThreeCardSection: React.FC = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="flex flex-col md:space-y-8 space-y-6 w-full sm:w-[300px] h-[20rem] md:h-[24rem] p-6 bg-neutral-100 rounded-2xl border border-indigo-600 shadow-md hover:shadow-lg transition-shadow">
+        <div className="flex flex-col md:space-y-8 space-y-6 w-full sm:w-[300px] h-[22rem] md:h-[24rem] p-6 bg-neutral-100 rounded-2xl border border-indigo-600 shadow-md hover:shadow-lg transition-shadow">
           <h2 className="text-indigo-400 text-6xl ">Step 03</h2>
           <h3 className="text-neutral-700 text-[24px] font-medium leading-[33.6px]">
             See Your Profits Instantly

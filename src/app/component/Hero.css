@@ -1,0 +1,27 @@
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .responsive-image {
+    width: 50%; /* Increase the size of the image */
+    max-width: 500px; /* Decrease the size of the image */
+    bottom: 10rem;
+    text-size-adjust: 0.5rem;
+    /* left: -12px; */
+  }
+
+  .responsive-container {
+    width: 50%; /* Increase the size of the image */
+    max-width: 500px; /* Decrease the size of the image */
+    bottom: 10rem;
+    text-size-adjust: 0.5rem;
+    left: -12px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .tiktok-container {
+    width: 70%; /* Increase the size of the image */
+    max-width: 500px; /* Decrease the size of the image */
+    bottom: 6rem;
+    text-size-adjust: 0.5rem;
+    margin-left: 30rem;
+  }
+}

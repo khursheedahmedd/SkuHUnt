@@ -123,7 +123,6 @@ const ChooseYourPlan = () => {
                 className="font-bold text-6xl md:text-7xl lg:text-7xl"
                 style={{
                   fontFamily: "Satoshi, sans-serif",
-                  // fontSize: "65px",
                   color: plan.isHighlighted ? "#fff" : "#404040",
                   lineHeight: "100%",
                   letterSpacing: "-2.88px",
