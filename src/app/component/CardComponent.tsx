@@ -59,7 +59,7 @@ const CardComponent: React.FC = () => {
           <img
             src="/ENGISHT LOGO 1.svg"
             alt="Logo 1"
-            className="h-auto w-[20%] min-w-[100px] max-w-[150px] object-contain"
+            className="h-auto w-[20%] pl-4 min-w-[100px] max-w-[150px] object-contain"
           />
           <img
             src="/Group.svg"
@@ -74,7 +74,7 @@ const CardComponent: React.FC = () => {
           <img
             src="/plexo logo 1.svg"
             alt="Logo 4"
-            className="h-auto w-[20%] min-w-[100px] max-w-[150px] object-contain"
+            className="h-auto w-[20%] min-w-[100px] pr-4 max-w-[150px] object-contain"
           />
         </div>
       </div>

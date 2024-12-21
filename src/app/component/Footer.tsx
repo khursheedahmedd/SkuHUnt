@@ -13,9 +13,9 @@ const Footer: React.FC = () => {
       }}
     >
       {/* Footer Header */}
-      <div className="text-left md:text-left flex flex-col sm:flex-row justify-between items-center w-full">
+      <div className="text-left flex flex-col md:flex-row justify-between sm:gap-8 gap-4 md:items-center items-start w-full">
         <h2
-          className="text-3xl sm:text-4xl lg:text-7xl mb-4"
+          className="text-4xl sm:text-5xl lg:text-7xl mb-4"
           style={{
             fontFamily: "Satoshi, sans-serif",
             color: "white",
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
                 required
                 style={{
                   fontFamily: "Satoshi, sans-serif",
-                  fontSize: "16px",
+                  fontSize: "1.4rem",
                   fontWeight: 400,
                   lineHeight: "24px",
                   letterSpacing: "-0.5px",

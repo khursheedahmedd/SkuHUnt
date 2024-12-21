@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white p-5 lg:px-[7.25rem] z-50 relative">
+    <nav className="bg-white p-3 py-8 lg:px-[7.25rem] z-50 relative">
       <div className="flex justify-between items-center">
         {/* Logo Section */}
         <div className="flex items-center">

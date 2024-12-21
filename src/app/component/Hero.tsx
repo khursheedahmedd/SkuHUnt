@@ -4,11 +4,11 @@ import "./Hero.css";
 const Hero: React.FC = () => {
   return (
     <div className="">
-      <section className="flex flex-col items-start bg-mobile-gradient md:bg-tablet-image p-6 bg-cover bg-no-repeat lg:bg-desktop-image rounded-[28px] md:p-10 lg:py-8 lg:px-16 mx-auto lg:max-w-[100rem] xl:max-w-[200rem]">
+      <section className="flex flex-col items-center bg-mobile-gradient md:bg-tablet-image p-10 bg-cover bg-no-repeat lg:bg-desktop-image rounded-[28px] md:p-20 lg:py-8 lg:px-16 mx-auto lg:max-w-[100rem] xl:max-w-[200rem]">
         {/* Text Section */}
-        <div className=" flex flex-col md:flex-row items-center text-center md:text-left w-full md:gap-8">
-          <div className="flex flex-col  md:items-start w-full md:w-1/2 space-y-6">
-            <p className="text-3xl text-wrap lg:text-[4.5rem] md:text-[2rem] font-bold font-satoshi leading-tight lg:tracking-[-3.6px] capitalize  mb-2 lg:mb-0">
+        <div className=" flex flex-col lg:flex-row items-center text-center lg:text-left w-full lg:gap-8">
+          <div className="flex flex-col lg:items-start w-full lg:w-1/2 space-y-6">
+            <p className="text-3xl text-wrap lg:text-[3.0rem] md:text-[3rem] font-bold font-satoshi leading-tight lg:tracking-[-3.6px] capitalize  mb-2 lg:mb-0">
               <span className="text-gray-950 lg:space-x-4">
                 Start Growing With{" "}
               </span>
@@ -74,15 +74,15 @@ const Hero: React.FC = () => {
                 alt="Dashboard Analytics"
                 className="object-cover rounded-lg w-full "
               />
-              <div className="relative max-w-[14rem] responsive-container lg:flex flex-row mx-0 gap-4 items-center md:bottom-20 lg:bottom-[19rem]  left-18 right-auto bg-indigo-400 text-white py-5 px-6 rounded-2xl hidden shadow-md">
+              <div className="relative max-w-[13rem] responsive-container lg:flex flex-row mx-0 gap-4 items-center md:bottom-20 lg:bottom-[19rem]  left-18 right-auto bg-indigo-400 text-white py-5 px-6 rounded-2xl hidden shadow-md">
                 <div className="font-satoshi  text-[18px] font-medium leading-[20px] space-y-2">
                   Samples <br />
                   Distributed
                 </div>
                 <div className="text-5xl font-satoshi"> 68</div>
               </div>
-              <div className="absolute top-[10rem] right-[-16px]  sm:right-0 object-cover rounded-lg  w-[7rem] lg:hidden block ">
-                <div className="absolute right-2  w-full mt-8 sm:w-auto flex justify-center border border-indigo-400 sm:justify-end bg-white rounded-lg shadow-lg  items-center  space-x-2 py-3 px-2">
+              <div className="absolute responsive-image tiktok mt-[-5rem] right-[-18px] object-cover rounded-lg w-[7rem] lg:hidden block ">
+                <div className="absolute right-2  w-full mt-8 sm:w-auto flex  justify-center border border-indigo-200 sm:justify-end bg-white rounded-lg shadow-lg  items-center  space-x-2 py-3 px-2">
                   {/* Footer Images (Cards) for md and sm*/}
                   <img
                     src="/GDPR FRAME.png"

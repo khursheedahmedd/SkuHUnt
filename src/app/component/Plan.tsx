@@ -100,11 +100,11 @@ const ChooseYourPlan = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:gap-6 gap-6 items-center mt-10 w-full px-2 md:px-6 lg:px-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 md:gap-2 gap-6 place-items-center items-center mt-10 px-2 md:px-2 xl:px-8">
         {plans.map((plan, index) => (
           <div
             key={index}
-            className={`rounded-xl p-6 md:max-w-[22rem] border border-indigo-200 transition-transform duration-300 transform ${
+            className={`rounded-xl p-6 lg:max-w-96 sm:max-w-96 border border-indigo-200 transition-transform duration-300 transform ${
               plan.isHighlighted
                 ? "bg-indigo-400 border-indigo-700 scale-105"
                 : "bg-white"
@@ -120,7 +120,7 @@ const ChooseYourPlan = () => {
 
             <div className="mt-4">
               <span
-                className="font-bold text-6xl md:text-7xl lg:text-7xl"
+                className="font-bold text-6xl md:text-6xl xl:text-7xl"
                 style={{
                   fontFamily: "Satoshi, sans-serif",
                   color: plan.isHighlighted ? "#fff" : "#404040",
@@ -155,7 +155,7 @@ const ChooseYourPlan = () => {
               {plan.description}
             </p>
             <button
-              className={`w-full py-2 px-12 mt-6 rounded-lg transition ${
+              className={`w-full py-2 px-12 lg:px-6 xl:px-12 mt-6 rounded-lg transition ${
                 plan.isHighlighted
                   ? "bg-white text-indigo-500 border-indigo-200 border hover:bg-indigo-50"
                   : "bg-indigo-400 text-white hover:bg-indigo-500"
