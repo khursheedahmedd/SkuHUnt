@@ -1,5 +1,8 @@
 import React from "react";
 
+{
+  /* ZigZagSection Component */
+}
 const ZigZagSection: React.FC = () => {
   return (
     <section
@@ -31,7 +34,6 @@ const ZigZagSection: React.FC = () => {
       </div>
 
       {/* Zig Zag Sections */}
-
       {[
         {
           image: "/Featue image .png",
@@ -167,13 +169,14 @@ const ZigZagSection: React.FC = () => {
                   }
                 }
               >
+                {/*title  of the section*/}
                 {section.title}
               </p>
-
+              {/*description of the section*/}
               <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-gray-600 mb-8 break-words">
                 {section.description}
               </p>
-
+              {/*Button*/}
               <a
                 href="tel:+16465665500"
                 className="bg-indigo-100 text-indigo-600 border border-indigo-600 py-3 md:px-10 sm:py-4 px-9  rounded-full shadow-md hover:bg-indigo-50 transition duration-300 w-full"

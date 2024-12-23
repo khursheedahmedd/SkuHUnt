@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
             />
           </svg>
         </button>
-
+        {/*for mobile devices */}
         <span className="hover:text-indigo-600 transition duration-200 cursor-pointer">
           Home
         </span>

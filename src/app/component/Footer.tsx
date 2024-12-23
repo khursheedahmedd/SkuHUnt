@@ -1,9 +1,12 @@
 import React from "react";
 
+{
+  /*Footer component */
+}
 const Footer: React.FC = () => {
   return (
     <footer
-      className="flex flex-col items-start  md:gap-24 gap-20 py-8 md:py-12 px-6 sm:px-12 lg:px-16 xl:px-24"
+      className="flex flex-col items-start  md:gap-24 gap-20 py-8 md:py-12 px-6 sm:px-12 lg:px-16 xl:px-24" //Footer background styling
       style={{
         borderRadius: "40px 40px 0px 0px",
         background: "linear-gradient(180deg, #6C9CFF 0%, #FCFCFC 100%)",
@@ -27,8 +30,10 @@ const Footer: React.FC = () => {
         >
           Let’s Sit & Talk
         </h2>
-
+        {/*Email section */}
+        {/*Email background and alignemnt adjustment */}
         <div className="flex flex-col sm:flex-row mb-8 items-start sm:items-center gap-4 w-full sm:w-auto sm:justify-between">
+          {/*Email Form styling */}
           <form className="flex flex-col w-full sm:w-auto justify-start sm:justify-center items-start sm:items-center">
             <div className="relative w-full">
               <input

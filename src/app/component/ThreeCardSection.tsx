@@ -1,5 +1,8 @@
 import React from "react";
 
+{
+  /* Thre stpes component */
+}
 const ThreeCardSection: React.FC = () => {
   return (
     <section className="w-full px-4 md:py-8 py-4 flex flex-col items-center gap-8">

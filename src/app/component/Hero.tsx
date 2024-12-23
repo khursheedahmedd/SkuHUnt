@@ -1,14 +1,18 @@
 import React from "react";
 import "./Hero.css";
 
+// Hero Component: Displays the main section with promotional content and call-to-action buttons
 const Hero: React.FC = () => {
   return (
     <div className="">
-      <section className="flex flex-col items-center bg-mobile-gradient md:bg-tablet-image p-10 bg-cover bg-no-repeat lg:bg-desktop-image rounded-[28px] md:p-20 lg:py-8 lg:px-16 mx-auto lg:max-w-[100rem] xl:max-w-[200rem]">
+      {/* Section Container: Includes background styles and layout settings */}
+      <section className="flex flex-col items-center bg-mobile-gradient sm:bg-tablet-image p-10 bg-cover bg-no-repeat lg:bg-desktop-image rounded-[28px] md:p-20 lg:py-8 lg:px-16 lg:max-w-[100rem] xl:max-w-[200rem]">
         {/* Text Section */}
-        <div className=" flex flex-col lg:flex-row items-center text-center lg:text-left w-full lg:gap-8">
+        <div className="flex flex-col lg:flex-row items-center text-center lg:text-left w-full lg:gap-8">
+          {/* Left Column: Text and Call-to-Actions */}
           <div className="flex flex-col lg:items-start w-full lg:w-1/2 space-y-6">
-            <p className="text-3xl text-wrap lg:text-[3.0rem] md:text-[3rem] font-bold font-satoshi leading-tight lg:tracking-[-3.6px] capitalize  mb-2 lg:mb-0">
+            {/* Main Heading */}
+            <p className="text-3xl text-wrap lg:text-[4.0rem] md:text-[3rem] font-bold leading-tight mb-2 lg:mb-0">
               <span className="text-gray-950 lg:space-x-4">
                 Start Growing With{" "}
               </span>
@@ -18,17 +22,21 @@ const Hero: React.FC = () => {
                 Profit Analytics
               </span>
             </p>
+
+            {/* Feature Descriptions */}
             <div className="text-sm text-[#272727] space-y-5">
+              {/* Feature 1 */}
               <div className="flex items-start space-x-4 text-left rounded-xl">
                 <img
                   src="/secure-icon.png"
                   alt="Shield Icon"
-                  className="w-6 h-6 mt-1" /* Adjust width and height as needed */
+                  className="w-6 h-6 mt-1"
                 />
                 <p className="font-satoshi text-lg leading-7">
                   We never sell your data, 100% secure.
                 </p>
               </div>
+              {/* Feature 2 */}
               <div className="flex items-start space-x-4 text-left">
                 <img
                   src="/connect-icon.png"
@@ -39,6 +47,7 @@ const Hero: React.FC = () => {
                   Connect your TikTok shop in just 5 minutes
                 </p>
               </div>
+              {/* Feature 3 */}
               <div className="flex text-left items-start space-x-4">
                 <img
                   src="/acuurate-icon.png"
@@ -51,10 +60,13 @@ const Hero: React.FC = () => {
               </div>
             </div>
 
+            {/* Call-to-Action Buttons */}
             <div className="flex flex-col md:flex-row items-center md:items-center md:space-x-4 space-y-4 md:space-y-0 w-full ">
+              {/* Free Trial Button */}
               <button className="bg-indigo-600 text-white py-3 px-6 rounded-full shadow-md hover:bg-indigo-500 transition md:mt-6 duration-300 w-full sm:w-3/4 md:w-auto">
                 Start Your Free Trial
               </button>
+              {/* Contact Section */}
               <div className="flex flex-col items-center md:mt-8 w-full sm:w-3/4 md:w-auto ">
                 <p className="text-gray-600 mb-2 font-satoshi text-xs hidden md:block">
                   Have a question?
@@ -66,53 +78,57 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Image Section */}
-          <div className="relative w-full md:w-1/2 mt-11 md:mt-[3rem] flex justify-center items-center">
+          {/* Right Column: Image Section */}
+          <div className="relative w-full lg:w-1/2 mt-11 lg:mt-[3rem] flex justify-center items-center">
+            {/* Dashboard Analytics Image */}
             <div className="relative w-full max-w-[82rem] mx-auto md:mx-0">
               <img
                 src="/DashBord.png"
                 alt="Dashboard Analytics"
                 className="object-cover rounded-lg w-full "
               />
-              <div className="relative max-w-[13rem] responsive-container lg:flex flex-row mx-0 gap-4 items-center md:bottom-20 lg:bottom-[19rem]  left-18 right-auto bg-indigo-400 text-white py-5 px-6 rounded-2xl hidden shadow-md">
-                <div className="font-satoshi  text-[18px] font-medium leading-[20px] space-y-2">
+              {/* Small Info Card */}
+              <div className="relative responsive-container max-w-[170px] lg:flex flex-row mx-0 gap-4 items-center justify-between md:bottom-20 lg:bottom-[19rem]  left-18 right-auto bg-indigo-400 text-white py-5 px-6 rounded-xl hidden shadow-md">
+                <div className="text-[0.8rem] font-medium leading-[20px] space-y-2">
                   Samples <br />
                   Distributed
                 </div>
-                <div className="text-5xl font-satoshi"> 68</div>
+                <div className="text-4xl">68</div>
               </div>
-              <div className="absolute responsive-image tiktok mt-[-5rem] right-[-18px] object-cover rounded-lg w-[7rem] lg:hidden block ">
-                <div className="absolute right-2  w-full mt-8 sm:w-auto flex  justify-center border border-indigo-200 sm:justify-end bg-white rounded-lg shadow-lg  items-center  space-x-2 py-3 px-2">
-                  {/* Footer Images (Cards) for md and sm*/}
+              {/* Small Icons Row */}
+              <div className="absolute lg-tiktok-container sm-tiktok-container md-tiktok-container responsive-image tiktok mt-[-5rem] right-[-18px] object-cover rounded-lg w-[8rem] lg:hidden block ">
+                <div className="absolute right-2 mt-8 w-full flex justify-center border border-indigo-200 sm:justify-end bg-white rounded-lg shadow-lg items-center space-x-2 py-3 px-0 sm:px-2">
+                  {/* Footer Images (Cards) for md and sm */}
                   <img
                     src="/GDPR FRAME.png"
                     alt="Footer Image 1"
-                    className="h-5 w-5 object-cover rounded-full shadow-small"
+                    className="sm:h-8 h-6 sm:w-8 sm-image-size lg-image-size md-image-size  w-6 md:h-12 md:w-12 object-cover rounded-full shadow-small"
                   />
                   <img
                     src="/SSL frame.png"
                     alt="Footer Image 2"
-                    className="h-5 w-5 object-cover rounded-full shadow-small "
+                    className=" h-6 w-6 sm:h-8 sm:w-8 sm-image-size lg-image-size md-image-size  md:h-12 md:w-12 object-cover rounded-full shadow-small "
                   />
                   <img
                     src="/Tiktok frame.png"
                     alt="Footer Image 3"
-                    className="h-5 w-9 object-cover rounded-full shadow-small "
+                    className=" h-6 w-12 sm:h-8 sm:w-16 sm-image-size lg-image-size md-image-size  md:h-12 md:w-18 object-cover rounded-full shadow-small "
                   />
                 </div>
               </div>
             </div>
+            {/* Sales Analytics Image */}
             <img
               src="/sales.png"
               alt="Sales Analytics"
-              className="absolute responsive-image top-[-28px] right-[-18px] object-cover rounded-lg md:max-w-[8rem] lg:max-w-[21rem]  max-w-32"
+              className="absolute responsive-image analysis-container lg-analysis-container top-[-28px] right-[-18px] object-cover rounded-lg md:max-w-[16rem] lg:max-w-[20rem] max-w-36"
             />
           </div>
         </div>
 
         {/* Footer Section */}
-        <div className="relative lg:flex justify-center md:justify-end items-center tiktok-container pb-24 w-full hidden ">
-          <div className="absolute right-0 sm:right-32 w-full md:hidden lg:flex mt-3 sm:w-auto flex justify-center border border-indigo-400 sm:justify-end bg-white rounded-lg shadow-lg  items-center  space-x-10 py-3 px-8 object-cover">
+        <div className="relative lg:flex justify-center md:justify-end items-center tiktok-container pb-24 lg:w-3/4 xl:w-full hidden ">
+          <div className="absolute right-0 sm:right-24 xl:right-28 w-full md:hidden lg:flex mt-3 lg:mt-0 sm:w-auto flex justify-center border border-indigo-400 sm:justify-end bg-white rounded-lg shadow-lg  items-center  space-x-10 py-3 px-8 object-cover">
             {/* Footer Images (Cards) */}
             <img
               src="/GDPR FRAME.png"

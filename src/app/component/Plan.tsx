@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+{
+  /* this object include all the data that will be include in plan boxes */
+}
 const plans = [
   {
     name: "Starter",
@@ -60,9 +63,16 @@ const plans = [
   },
 ];
 
+{
+  /* Choose Your plan component */
+}
+
 const ChooseYourPlan = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
+  {
+    /*This will change the plan from yearly to monthly and vice versa */
+  }
   const toggleDuration = () => {
     setIsMonthly(!isMonthly);
   };
@@ -100,16 +110,19 @@ const ChooseYourPlan = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 md:gap-2 gap-6 place-items-center items-center mt-10 px-2 md:px-2 xl:px-8">
+      {/* Plan Boxes */}
+      {/* This will display the plan boxes by maping on plan object data */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 w-full md:gap-2 gap-6 place-items-center items-center mt-10 px-2 md:px-2 xl:px-8">
         {plans.map((plan, index) => (
           <div
             key={index}
-            className={`rounded-xl p-6 lg:max-w-96 sm:max-w-96 border border-indigo-200 transition-transform duration-300 transform ${
+            className={`rounded-xl p-6 lg:max-w-96 max-w-[30rem] w-full border border-indigo-200 transition-transform duration-300 transform ${
               plan.isHighlighted
-                ? "bg-indigo-400 border-indigo-700 scale-105"
+                ? "bg-indigo-400 border-indigo-700 scale-100 md:ml-7 md:mr-8"
                 : "bg-white"
             }`}
           >
+            {/* Plan Name */}
             <h3
               className={`text-xl font-semibold ${
                 plan.isHighlighted ? "text-white" : "text-gray-800"
@@ -117,7 +130,7 @@ const ChooseYourPlan = () => {
             >
               {plan.name}
             </h3>
-
+            {/* Plan price  */}
             <div className="mt-4">
               <span
                 className="font-bold text-6xl md:text-6xl xl:text-7xl"
@@ -141,6 +154,8 @@ const ChooseYourPlan = () => {
                 {isMonthly ? "Per Month" : "Per Year"}
               </span>
             </div>
+
+            {/* Plan Description */}
             <p
               className={`mt-4 ${
                 plan.isHighlighted ? "text-white" : "text-gray-700"

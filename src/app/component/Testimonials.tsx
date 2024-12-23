@@ -1,8 +1,9 @@
 import React from "react";
 import { FiCircle } from "react-icons/fi"; // Circle icon
-import { AiFillStar, AiFillHeart } from "react-icons/ai"; // Star and Heart icons
-import { BsEmojiSmile } from "react-icons/bs"; // Smile Emoji icon
 
+{
+  /* Testimonials section */
+}
 const Testimonials: React.FC = () => {
   return (
     <section
@@ -12,7 +13,7 @@ const Testimonials: React.FC = () => {
           "0px 4px 6px -2px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.1)",
       }}
     >
-      {/* Buttons */}
+      {/* This section was include floating emojis but the emojis was removed in our one of iteration so its comented. remove comments wehen you need emojis back*/}
       {/* <div className="absolute top-4 right-4 flex items-center justify-center w-10 h-10 bg-indigo-500 text-white rounded-full shadow-md cursor-pointer z-20">
         <AiFillStar size={20} />
       </div>
@@ -23,6 +24,7 @@ const Testimonials: React.FC = () => {
         <BsEmojiSmile size={20} />
       </div> */}
 
+      {/* Testimonials section title */}
       <h2 className="md:text-[65px] text-[52px] font-bold text-neutral-700 text-center leading-[60px] tracking-[-2.88px] capitalize py-8">
         Hear What Sellers <br />
         <span className="text-neutral-700">Have to Say</span>
@@ -89,6 +91,8 @@ const Testimonials: React.FC = () => {
           </p>
         </div>
       </div>
+
+      {/* Start your free trial button */}
       <div className="mt-16">
         <a className="bg-indigo-600 text-white border hover:bg-indigo-400 cursor-pointer  border-indigo-600 py-4 px-8 rounded-full shadow-md  transition duration-300 w-full md:w-auto">
           Start Your Free Trial

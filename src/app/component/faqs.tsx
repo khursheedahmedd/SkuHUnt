@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+{
+  /* This object include  the data that will be displayed in faqs*/
+}
 const faqs = [
   {
     question: "How does SKUHunt ensure profit accuracy?",
@@ -33,21 +36,30 @@ const faqs = [
   },
 ];
 
+{
+  /* This is the FAQ component that displays the frequently asked questions and their answers */
+}
+
 const FaqComponent = () => {
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
-
+  {
+    /*This button function will toggle the faq for detail */
+  }
   const toggleFaq = (index) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
 
   return (
     <div className="flex flex-col items-center bg-gray-50 p-6 sm:p-8 md:p-10 lg:p-16">
+      {/*Heading */}
       <h2
         className="text-6xl text-center pt-4 py-3 md:text-4xl lg:text-7xl font-bold text-gray-700 tracking-tight"
         style={{ fontFamily: "Arial, sans-serif" }}
       >
         FAQs
       </h2>
+
+      {/*Description of heading */}
       <p
         className="text-center mb-6"
         style={{
@@ -61,6 +73,7 @@ const FaqComponent = () => {
         We provide answers to common questions about our products/services
       </p>
 
+      {/*This will map on faqs object and display all the content */}
       <div className="w-full max-w-5xl">
         {faqs.map((faq, index) => (
           <div
@@ -71,10 +84,12 @@ const FaqComponent = () => {
               backgroundColor: openFaqIndex === index ? "#EEF0FFFF" : "white",
             }}
           >
+            {/*Toggle button for displaying the details of a question */}
             <div
               className="flex justify-between items-center cursor-pointer"
               onClick={() => toggleFaq(index)}
             >
+              {/*Question  */}
               <h3
                 className="text-lg sm:text-xl font-semibold"
                 style={{
@@ -103,6 +118,7 @@ const FaqComponent = () => {
             </div>
             {openFaqIndex === index && (
               <div className="mt-3 text-gray-600 text-sm sm:text-base">
+                {/*Answer */}
                 <p
                   style={{
                     color: "#7A7A7A",
@@ -119,7 +135,10 @@ const FaqComponent = () => {
         ))}
       </div>
 
+      {/* CTA */}
+
       <div className="flex flex-col items-center justify-center mt-12 bg-indigo-600 rounded-3xl lg:py-[6.25rem] py-12 shadow-lg w-full px-8 sm:px-6 md:px-8 lg:px-12">
+        {/*Heading */}
         <p
           className="gap-2 text-white mb-4 text-center text-2xl lg:text-6xl font-bold"
           style={{ textTransform: "capitalize" }}
@@ -128,9 +147,11 @@ const FaqComponent = () => {
           <br />
           Leave the rest to us
         </p>
+        {/*Description */}
         <p className="text-white text-center mb-6">
           Join SKUHunt today to make financial decisions with confidence.
         </p>
+        {/*CTA Button */}
         <a className="bg-white text-indigo-600 border border-indigo-600 py-3 px-8 rounded-full shadow-md hover:bg-indigo-50 transition duration-300 w-full sm:w-auto text-center mx-auto">
           Start Your Free Trial
         </a>
