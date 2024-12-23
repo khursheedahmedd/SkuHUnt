@@ -148,5 +148,6 @@ SKUHUNT
 Enjoy building with **SKUHunt**!
 
 ```
+https://github.com/khursheedahmedd/SkuHUnt.git
 
 ```
