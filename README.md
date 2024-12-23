@@ -1,4 +1,3 @@
-````markdown
 # SKUHunt
 
 SKUHunt is a Next.js application designed to showcase various React components, including cards, a hero section, a pricing plan section, and more. This project is built with modern JavaScript/TypeScript tooling and uses Tailwind CSS for styling.
@@ -21,7 +20,6 @@ SKUHunt is a Next.js application designed to showcase various React components, 
    ```bash
    npm install
    ```
-````
 
 ### Running the Development Server
 
