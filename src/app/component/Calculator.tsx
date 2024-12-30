@@ -10,26 +10,10 @@ const Calculator = () => {
       className="flex flex-col items-center text-center justify-center md:mt-12 mt-0 bg-indigo-600 py-[4rem] sm:py-[6rem] px-[3.25rem] lg:py-[8rem] rounded-3xl shadow-lg w-full space-y-5 sm:px-12"
       style={{
         height: "auto",
-        // padding: "40px",
-        // textAlign: "center",
       }}
     >
       {/* Title */}
-      <p
-        className="font-bold text-white mb-2 gap-6 gap-x-4 text-center lg:text-7xl md:text-4xl text-3xl"
-        style={
-          {
-            // fontFamily: "Satoshi, Arial",
-            // fontSize: "40px", // Default for large screens
-            // fontWeight: 500,
-            // color: "#FFF",
-            // lineHeight: "100%",
-            // letterSpacing: "-2.88px",
-            // textAlign: "center",
-            // textTransform: "capitalize",
-          }
-        }
-      >
+      <p className="font-bold text-white mb-2 gap-6 gap-x-4 text-center lg:text-7xl md:text-4xl text-3xl">
         Download Your Free Calculator
       </p>
       {/* Subtitle */}

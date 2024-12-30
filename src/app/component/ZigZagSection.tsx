@@ -14,20 +14,7 @@ const ZigZagSection: React.FC = () => {
       {/* Top Title */}
 
       <div className="text-center mb-12">
-        <p
-          className="sm:text-4xl lg:text-7xl font-bold text-gray-700 text-3xl gap-6 gap-x-4"
-          style={
-            {
-              // fontFamily: "Satoshi, sans-serif",
-              // color: "#404040", // Neutral 700 color
-              // lineHeight: "100%",
-              // letterSpacing: "-2.88px",
-              // textTransform: "capitalize", // Capitalize text
-              // fontWeight: 650,
-              // textAlign: "center",
-            }
-          }
-        >
+        <p className="sm:text-4xl lg:text-7xl font-bold text-gray-700 text-3xl gap-6 gap-x-4">
           Sync Your TikTok Shop In Under 5-Minutes And{" "}
           <span className="text-indigo-400 font-bold">Get Visibility.</span>
         </p>
@@ -155,20 +142,7 @@ const ZigZagSection: React.FC = () => {
             {/* Text Section */}
 
             <div className="flex-1 text-center md:text-left">
-              <p
-                className="text-3xl sm:text-3xl xl:text-6xl lg:text-4xl font-satoshi font-medium text-gray-700 mb-4"
-                style={
-                  {
-                    // fontFamily: "Satoshi, sans-serif",
-                    // fontSize: "50px",
-                    // color: "#404040",
-                    // lineHeight: "120%",
-                    // letterSpacing: "-2.88px",
-                    // textTransform: "capitalize",
-                    // fontWeight: 500,
-                  }
-                }
-              >
+              <p className="text-3xl sm:text-3xl xl:text-6xl lg:text-4xl font-satoshi font-medium text-gray-700 mb-4">
                 {/*title  of the section*/}
                 {section.title}
               </p>
@@ -209,20 +183,7 @@ const ZigZagSection: React.FC = () => {
                 textAlign: "center",
               }}
             >
-              <h2
-                className="text-4xl sm:text-3xl lg:text-6xl font-bold text-white mb-4 text-center"
-                style={
-                  {
-                    // fontFamily: "Satoshi, sans-serif",
-                    // fontSize: "60px",
-                    // fontWeight: 500,
-                    // color: "#FFF",
-                    // lineHeight: "100%",
-                    // letterSpacing: "-2.88px",
-                    // textTransform: "capitalize",
-                  }
-                }
-              >
+              <h2 className="text-4xl sm:text-3xl lg:text-6xl font-bold text-white mb-4 text-center">
                 Experience SKUhunt Risk-Free!
               </h2>
 

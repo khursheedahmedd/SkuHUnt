@@ -11,8 +11,6 @@ const Footer: React.FC = () => {
         borderRadius: "40px 40px 0px 0px",
         background: "linear-gradient(180deg, #6C9CFF 0%, #FCFCFC 100%)",
         width: "100%",
-        // maxWidth: "1440px",
-        // margin: "0 auto",
       }}
     >
       {/* Footer Header */}

@@ -63,9 +63,15 @@ const Hero: React.FC = () => {
             {/* Call-to-Action Buttons */}
             <div className="flex flex-col md:flex-row items-center md:items-center md:space-x-4 space-y-4 md:space-y-0 w-full ">
               {/* Free Trial Button */}
-              <button className="bg-indigo-600 text-white py-3 px-6 rounded-full shadow-md hover:bg-indigo-500 transition md:mt-6 duration-300 w-full sm:w-3/4 md:w-auto">
-                Start Your Free Trial
-              </button>
+              <div className="flex flex-col items-center md:mt-8 w-full sm:w-3/4 md:w-auto ">
+                <button className="bg-indigo-600 text-white py-3 px-6 rounded-full shadow-md hover:bg-indigo-500 transition md:mt-5 duration-300 w-full sm:w-3/4 md:w-auto">
+                  Start Your Free Trial
+                </button>
+                <p className="text-gray-600 mb-2 mt-2 text-xs hidden md:block">
+                  <span className="font-bold">1 month free trial.</span> No
+                  credit card required.
+                </p>
+              </div>
               {/* Contact Section */}
               <div className="flex flex-col items-center md:mt-8 w-full sm:w-3/4 md:w-auto ">
                 <p className="text-gray-600 mb-2 font-satoshi text-xs hidden md:block">
@@ -96,7 +102,29 @@ const Hero: React.FC = () => {
                 <div className="text-4xl">68</div>
               </div>
               {/* Small Icons Row */}
-              <div className="absolute lg-tiktok-container sm-tiktok-container md-tiktok-container responsive-image tiktok mt-[-5rem] right-[-18px] object-cover rounded-lg w-[8rem] lg:hidden block ">
+              {/*For Meduim devices */}
+              <div className="absolute lg-tiktok-container sm-tiktok-container md-tiktok-container responsive-image tiktok mt-[-5rem] right-[-18px] object-cover rounded-lg w-[8rem] lg:hidden md:block hidden">
+                <div className="absolute right-2 mt-8 w-full flex justify-center border border-indigo-200 sm:justify-end bg-white rounded-lg shadow-lg items-center space-x-2 py-3 px-0 sm:px-2">
+                  {/* Footer Images (Cards) for md and sm */}
+                  <img
+                    src="/GDPR FRAME.png"
+                    alt="Footer Image 1"
+                    className="sm:h-8 h-6 sm:w-8 sm-image-size lg-image-size md-image-size  w-6 md:h-12 md:w-12 object-cover rounded-full shadow-small"
+                  />
+                  <img
+                    src="/SSL frame.png"
+                    alt="Footer Image 2"
+                    className=" h-6 w-6 sm:h-8 sm:w-8 sm-image-size lg-image-size md-image-size  md:h-12 md:w-12 object-cover rounded-full shadow-small "
+                  />
+                  <img
+                    src="/Tiktok frame.png"
+                    alt="Footer Image 3"
+                    className=" h-6 w-12 sm:h-8 sm:w-16 sm-image-size lg-image-size md-image-size  md:h-12 md:w-18 object-cover rounded-full shadow-small "
+                  />
+                </div>
+              </div>
+              {/*For small devices */}
+              <div className="absolute tiktok-position md-tiktok-container  responsive-image tiktok mt-[-5rem] right-[-18px] object-cover rounded-lg w-[8rem] md:hidden block ">
                 <div className="absolute right-2 mt-8 w-full flex justify-center border border-indigo-200 sm:justify-end bg-white rounded-lg shadow-lg items-center space-x-2 py-3 px-0 sm:px-2">
                   {/* Footer Images (Cards) for md and sm */}
                   <img
@@ -118,10 +146,17 @@ const Hero: React.FC = () => {
               </div>
             </div>
             {/* Sales Analytics Image */}
+            {/*For small devices */}
             <img
               src="/sales.png"
               alt="Sales Analytics"
-              className="absolute responsive-image analysis-container lg-analysis-container top-[-28px] right-[-18px] object-cover rounded-lg md:max-w-[16rem] lg:max-w-[20rem] max-w-36"
+              className="absolute responsive-image analysis-position  analysis-container lg-analysis-container bottom-[-2.75rem]  right-[-18px] object-cover rounded-lg md:max-w-[16rem] lg:max-w-[20rem] max-w-36 md:hidden block"
+            />
+            {/*For large devices */}
+            <img
+              src="/sales.png"
+              alt="Sales Analytics"
+              className="absolute responsive-image analysis-container lg-analysis-container top-[-28px] right-[-18px] object-cover rounded-lg md:max-w-[16rem] lg:max-w-[20rem] max-w-36 hidden md:block"
             />
           </div>
         </div>
