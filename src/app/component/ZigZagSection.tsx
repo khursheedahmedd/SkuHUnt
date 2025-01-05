@@ -39,6 +39,7 @@ const ZigZagSection: React.FC = () => {
             "Quickly view your sales, sample costs, orders, refunds, ad costs, estimated payouts, and net profit—all in one glance with our intuitive tile view for effortless performance comparison.",
 
           reverse: false,
+          margin: false,
         },
 
         {
@@ -151,22 +152,69 @@ const ZigZagSection: React.FC = () => {
                 {section.description}
               </p>
               {/*Button*/}
-              <a
-                href="tel:+16465665500"
-                className="bg-indigo-100 text-indigo-600 border border-indigo-600 py-3 md:px-10 sm:py-4 px-9  rounded-full shadow-md hover:bg-indigo-50 transition duration-300 w-full"
-              >
-                Learn More
-              </a>
+              {index > 0 && (
+                <a
+                  href="tel:+16465665500"
+                  className="bg-indigo-100 text-indigo-600 border border-indigo-600 py-3 md:px-10 sm:py-4 px-9   rounded-full shadow-md hover:bg-indigo-50 transition duration-300 w-full"
+                >
+                  Learn More
+                </a>
+              )}
+              {index === 0 && (
+                <a
+                  href="tel:+16465665500"
+                  className="bg-indigo-100 text-indigo-600 border border-indigo-600 py-3 md:px-10 sm:py-4 px-9  rounded-full shadow-md hover:bg-indigo-50 transition duration-300 w-full"
+                >
+                  Learn More
+                </a>
+              )}
             </div>
 
             {/* Image Section */}
 
             <div className="flex-1 flex justify-center items-center">
-              <img
-                src={section.image}
-                alt={section.alt}
-                className="w-full max-w-md sm:max-w-lg xl:max-w-2xl h-auto rounded-lg "
-              />
+              {index === 1 && (
+                <img
+                  src={section.image}
+                  alt={section.alt}
+                  className="w-full max-w-md sm:max-w-lg xl:max-w-2xl h-auto rounded-lg mt-12 md:mt-0 mb-6 md:mb-0"
+                />
+              )}
+              {index <= 0 && (
+                <img
+                  src={section.image}
+                  alt={section.alt}
+                  className="w-full max-w-md sm:max-w-lg xl:max-w-2xl h-auto rounded-lg mt-[-24px]"
+                />
+              )}
+              {index === 2 && (
+                <img
+                  src={section.image}
+                  alt={section.alt}
+                  className="w-full max-w-md sm:max-w-lg xl:max-w-2xl h-auto rounded-lg mt-0 md:mt-0"
+                />
+              )}
+              {index === 3 && (
+                <img
+                  src={section.image}
+                  alt={section.alt}
+                  className="w-full max-w-md sm:max-w-lg xl:max-w-2xl h-auto rounded-lg mt-4 md:mt-0 "
+                />
+              )}
+              {index === 4 && (
+                <img
+                  src={section.image}
+                  alt={section.alt}
+                  className="w-full max-w-md sm:max-w-lg xl:max-w-2xl h-auto rounded-lg mt-12 md:mt-0  mb-6 md:mb-0"
+                />
+              )}
+              {index === 5 && (
+                <img
+                  src={section.image}
+                  alt={section.alt}
+                  className="w-full max-w-md sm:max-w-lg xl:max-w-2xl h-auto rounded-lg mt-5 md:mt-0"
+                />
+              )}
             </div>
           </div>
 
@@ -174,7 +222,7 @@ const ZigZagSection: React.FC = () => {
 
           {index === 2 && (
             <div
-              className="flex flex-col items-center py-16 px-8 justify-center mt-12 bg-indigo-600 rounded-3xl shadow-lg w-full  sm:px-2 md:px-8 lg:px-12 sm:mb-[3rem] md:mb-[3rem] mb-2"
+              className="flex flex-col items-center py-16 px-8 justify-center mt-12 bg-indigo-600 rounded-3xl shadow-lg w-full  sm:px-2 md:px-8 lg:px-12 sm:mb-[3rem] md:mb-[3rem] mb-12"
               style={{
                 height: "auto",
 
