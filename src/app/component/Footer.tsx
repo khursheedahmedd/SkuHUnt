@@ -1,9 +1,19 @@
+"use client";
+
 import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 {
   /*Footer component */
 }
 const Footer: React.FC = () => {
+  const router = useRouter();
+
+  const navigateTo = (path: any) => {
+    router.push(path);
+  };
+
   return (
     <footer
       className="flex flex-col items-start  md:gap-24 gap-20 py-8 md:py-12 px-6 sm:px-12 lg:px-16 xl:px-24" //Footer background styling
@@ -156,8 +166,15 @@ const Footer: React.FC = () => {
       {/* Footer Bottom */}
       <div className="flex md:flex-row flex-col text-center md:mt-16 mt-2 text-gray-600 gap-6 items-start">
         <p>&copy; 2024 Copysright By SKUhunt </p>
-        <p>Terms</p>
-        <p>Privacy</p>
+        <Link href="/">
+          <p className="cursor-pointer hover:underline">Terms</p>
+        </Link>
+        <p
+          onClick={() => navigateTo("/privacy")}
+          className="cursor-pointer hover:underline"
+        >
+          Privacy
+        </p>
       </div>
     </footer>
   );
