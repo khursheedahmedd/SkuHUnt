@@ -13,7 +13,7 @@ const Privacy: NextPage = () => {
        * `px-8 pb-16` is kept, but note we can add additional breakpoints
        * if you want finer control on smaller screens.
        */}
-      <div className="bg-p-bg bg-cover px-4 sm:px-6 md:px-8 pb-16">
+      <div className="bg-p-bg bg-cover px-4 pt-8 sm:px-6 md:px-8 pb-16">
         {/**
          * The main gradient background area.
          * - Reduced padding on smaller screens (`py-6`) and scaled up
@@ -26,7 +26,7 @@ const Privacy: NextPage = () => {
            * `max-w-screen-xl` is kept the same for large devices;
            * it will simply shrink on smaller screens naturally.
            */}
-          <div className="w-full max-w-screen-xl">
+          <div className="w-full max-w-screen-xl shadow-none">
             {/**
              * Main title section:
              * - We add `text-3xl` for small screens and scale up to `text-5xl` for medium,
