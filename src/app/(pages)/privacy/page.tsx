@@ -13,7 +13,7 @@ const Privacy: NextPage = () => {
        * `px-8 pb-16` is kept, but note we can add additional breakpoints
        * if you want finer control on smaller screens.
        */}
-      <div className="bg-white px-4 sm:px-6 md:px-8 pb-16">
+      <div className="bg-p-bg bg-cover px-4 sm:px-6 md:px-8 pb-16">
         {/**
          * The main gradient background area.
          * - Reduced padding on smaller screens (`py-6`) and scaled up
@@ -50,10 +50,10 @@ const Privacy: NextPage = () => {
                */}
               {/* 1. Introduction */}
               <section className="mb-4">
-                <h2 className="text-lg sm:text-xl font-semibold mb-1">
+                <h2 className="text-lg sm:text-xl font-semibold mb-1 font-satoshi">
                   1. Introduction
                 </h2>
-                <p className="leading-relaxed text-gray-800 text-base md:text-lg lg:text-xl">
+                <p className="leading-relaxed text-gray-800 text-base md:text-lg lg:text-xl font-satoshi">
                   At SkuHunt, we value your privacy and are committed to
                   protecting your personal information. This Privacy Policy
                   outlines how we collect, use, store, and safeguard the data of

@@ -22,6 +22,7 @@ export default {
         'lgt-image': "url('/lg-t-bg.png')",
         'mdt-image': "url('/mdt-bg.png')",
         'smt-image': "url('/smt-bg.png')",
+        'p-bg': "url('/p-bg.png')",
       },
 
     },
