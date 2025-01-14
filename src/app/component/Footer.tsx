@@ -10,7 +10,7 @@ import { useRouter } from "next/navigation";
 const Footer: React.FC = () => {
   const router = useRouter();
 
-  const navigateTo = (path: any) => {
+  const navigateTo = (path: string) => {
     router.push(path);
   };
 
