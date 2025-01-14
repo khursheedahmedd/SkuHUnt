@@ -1,15 +1,15 @@
 "use client";
 
-import Navbar from "./component/Navbar";
-import Hero from "./component/Hero";
-import Card from "./component/CardComponent";
-import Video from "./component/Video";
-import ZigZag from "./component/ZigZagSection";
-import ThreeCards from "./component/ThreeCardSection";
-import Testimonials from "./component/Testimonials";
-import ChooseYourPlan from "./component/Plan";
-import Faqs from "./component/faqs";
-import Cal from "./component/Calculator";
+import Navbar from "@/app/component/Navbar";
+import Hero from "@/app/component/Hero";
+import Card from "@/app/component/CardComponent";
+import Video from "@/app/component/Video";
+import ZigZag from "@/app/component/ZigZagSection";
+import ThreeCards from "@/app/component/ThreeCardSection";
+import Testimonials from "@/app/component/Testimonials";
+import ChooseYourPlan from "@/app/component/Plan";
+import Faqs from "@/app/component/faqs";
+import Cal from "@/app/component/Calculator";
 import Footer from "./component/Footer";
 
 const Home: React.FC = () => {

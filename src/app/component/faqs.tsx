@@ -3,7 +3,12 @@ import React, { useState } from "react";
 {
   /* This object include  the data that will be displayed in faqs*/
 }
-const faqs = [
+type Faq = {
+  question: string;
+  answer: string;
+};
+
+const faqs: Faq[] = [
   {
     question: "How does SKUHunt ensure profit accuracy?",
     answer:
@@ -41,11 +46,9 @@ const faqs = [
 }
 
 const FaqComponent = () => {
-  const [openFaqIndex, setOpenFaqIndex] = useState(null);
-  {
-    /*This button function will toggle the faq for detail */
-  }
-  const toggleFaq = (index) => {
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+
+  const toggleFaq = (index: number): void => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
 
