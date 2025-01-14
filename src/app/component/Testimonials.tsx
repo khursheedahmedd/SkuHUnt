@@ -43,10 +43,10 @@ const Testimonials: React.FC = () => {
             </div>
           </div>
           <p className="text-sm text-gray-800 text-left mb-4">
-            "SKUhunt has completely transformed how I manage my inventory. It
-            helps me quickly identify my best-performing products and weed out
-            the underperformers. Now, I focus on scaling what works—and my
-            profits show it."
+          &quot;SKUhunt has completely transformed how I manage my inventory.
+            It helps me quickly identify my best-performing products and weed
+            out the underperformers. Now, I focus on scaling what works&mdash;and my
+            profits show it.&quot;
           </p>
         </div>
 
@@ -64,10 +64,11 @@ const Testimonials: React.FC = () => {
             </div>
           </div>
           <p className="text-sm text-gray-800 text-left mb-4">
-            "As a TikTok seller, I used to struggle with tracking product
+          &quot;As a TikTok seller, I used to struggle with tracking product
             performance. SKUhunt makes it effortless to pinpoint my top SKUs and
-            adjust my strategy. It’s a game-changer for anyone serious about
-            growing their business."
+            adjust my strategy. It&rsquo;s a game-changer for anyone serious about
+            growing their business.&quot;
+
           </p>
         </div>
 
@@ -85,9 +86,9 @@ const Testimonials: React.FC = () => {
             </div>
           </div>
           <p className="text-sm text-gray-800 text-left mb-4">
-            "With SKUhunt, I finally have the insights I need to make smarter
-            decisions. It’s easy to spot which products are driving sales and
-            which ones need to be cut, saving me time and money."
+          &quot;With SKUhunt, I finally have the insights I need to make
+            smarter decisions. It&rsquo;s easy to spot which products are driving
+            sales and which ones need to be cut, saving me time and money.&quot;
           </p>
         </div>
       </div>
